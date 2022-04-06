@@ -1,5 +1,10 @@
-import React from 'react';
+import React from 'react'
+import Login from './pages/Login'
 
 export default function App() {
-  return <div>asdasd</div>;
+  return (
+    <>
+      <Login />
+    </>
+  )
 }
