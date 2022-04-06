@@ -1,3 +1,5 @@
+# https://www.youtube.com/watch?v=4UZrsTqkcW4
+
 # NIKE 복제 사이트
 - git checkout master (master 브런치로 이동한다)
 - git pull origin master
