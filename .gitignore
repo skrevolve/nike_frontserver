@@ -1,6 +1,8 @@
 # Created by https://www.toptal.com/developers/gitignore/api/java,eclipse,intellij,visualstudiocode,react
 # Edit at https://www.toptal.com/developers/gitignore?templates=java,eclipse,intellij,visualstudiocode,react
 
+package-lock.json
+yarn.lock
 ### Eclipse ###
 .metadata
 bin/
