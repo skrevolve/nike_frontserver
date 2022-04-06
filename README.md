@@ -7,6 +7,9 @@
 4. 함부로 merge하지 말아주세여
 5. 본인의 branch에 자기가 추가한거이외에는 master랑 내용이 똑같아야합니다 ~ 같은 파일을 여러명이 작업하고 있다면 이점을 주의해주세요
 
+# 알고리즘 공부하고싶으면 여기로
+https://github.com/skrevolve/react-front-server/tree/skrevolve
+
 # React + typescript
 
 # RESTful API SERVER (springboot)
