@@ -1,0 +1,79 @@
+body {
+  color: #111;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+.menu-item-link {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/*header-top*/
+.header-top {
+  display: flex;
+  width: 100%;
+  height: 36px;
+  padding: 0 38px;
+  background-color: #f5f5f5;
+  box-sizing: border-box;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nk-brand .nk-brand-item {
+  display: flex;
+}
+
+.desk-user ul {
+  display: flex;
+}
+
+.desk-user ul li {
+  position: relative;
+}
+
+.desk-user ul li:first-child:before {
+  display: none;
+}
+
+.desk-user ul li::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 1px;
+  height: 10px;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  background-color: #333;
+}
+
+.desk-user ul li a {
+  margin: 0 10px;
+  font-size: 12px;
+}
+
+/*header*/
+.header {
+  display: flex;
+  width: 100%;
+  height: 60px;
+  box-sizing: border-box;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.gnb ul {
+  display: flex;
+}
+
+.gnb ul li {
+  padding: 18px 12px 16px;
+}
+
+.menu-opt {
+  display: flex;
+}
