@@ -1,7 +1,9 @@
 import React from "react";
 import "../css/default.css";
 import "../css/Header.css";
-//import nike from "../images/shoe.jpg";
+import logoJ from "../images/logo_jordan.png";
+import logoC from "../images/logo_converse.png";
+import logoN from "../images/logo_nike.png";
 
 export default function Header() {
   return (
@@ -10,12 +12,14 @@ export default function Header() {
         <div className="nk-brand">
           <ul className="nk-brand-item">
             <li>
-              <a href="#">
-                <img src="http://localhost:8080/images/shoe.jpg" alt="" />
+              <a href="https://www.nike.com/kr/ko_kr/l/jordan" target="_blank">
+                <img src={logoJ} alt="조던 홈페이지 새창 이동" />
               </a>
             </li>
             <li>
-              <a href="#">컨버스</a>
+              <a href="https://www.converse.co.kr/" target="_blank">
+                <img src={logoC} alt="컨버스 홈페이지 새창 이동" />
+              </a>
             </li>
           </ul>
         </div>
@@ -43,7 +47,11 @@ export default function Header() {
       </div>
       {/* //header-top */}
       <div className="header">
-        <h1 className="logo">로고</h1>
+        <h1 className="logo">
+          <a href="#">
+            <img src={logoN} alt="나이키" />
+          </a>
+        </h1>
         <div className="gnb">
           <ul>
             <li>
@@ -64,13 +72,19 @@ export default function Header() {
           </ul>
         </div>
         <div className="menu-opt">
-          <div>
-            <input type="search" />
-            <button>검색</button>
+          <div className="search_wrap">
+            <input type="search" placeholder="검색" />
+            <button>
+              <span className="blind">검색</span>
+            </button>
           </div>
           <div>
-            <button>찜목록</button>
-            <button>장바구니</button>
+            <a href="#">
+              <span>찜</span>
+            </a>
+            <a href="#">
+              <span>장바구니</span>
+            </a>
           </div>
         </div>
       </div>
