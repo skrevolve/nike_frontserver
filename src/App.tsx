@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <div>!!!!!!!!!!!!!!!나이키 메인화면 수정중!!!!!!!!!!!!!</div>
+      <div>!!!!!!!!!!!!!!!수정중!!!!!!!!!!!!!</div>
       <Footer />
     </div>
   );
