@@ -1,70 +1,38 @@
-# Getting Started with Create React App
+# https://www.youtube.com/watch?v=4UZrsTqkcW4
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# NIKE 복제 사이트
+- git checkout master (master 브런치로 이동한다)
+- git pull origin master
+- 내작업에 대한 내용을 이슈등록을 한다. (ex. 제목: 로그인 기능추가 내용: 작업내용 상세기입)
+- git branch 이슈제목명_날짜 (브런치생성)
+- git checkout 만든브런치로 이동
+- git add 작업된파일 또는 .
+- git commit -m "[#이슈번호] 이슈제목명_날짜"
+- git push -u origin 이슈제목명_날짜 ( 브런치는 하나의 작업단위로 생각 )
+- pull request 작성 및 merge
+- 작업이 끝난후 등록한이슈 닫기
 
-## Available Scripts
+중요 ☆ 새로운 작업이 있을경우 위와같이 branch를 새로 생성하여 반복
 
-In the project directory, you can run:
 
-### `npm start`
+기본규칙
+1. 자기 업무에 따라 이슈하나 생성 (ex. 로그인 페이지 생성)
+2. 해당이슈에 맞게 작업을 하면서 commit 메세지를 "[#이슈번호] 작업내용" 로 통일되게 작성
+3. commit 을 자기 branch영역에 push가 완료되고 작업이 끝났으면 pull request요청.(pull request요청 승인 대상은 본인제외 서규,주연만 선택)
+4. 함부로 merge하지 말아주세여
+5. 본인의 branch에 자기가 추가한거이외에는 master랑 내용이 똑같아야합니다 ~ 같은 파일을 여러명이 작업하고 있다면 이점을 주의해주세요
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+# 알고리즘 공부하고싶으면 여기로
+https://github.com/skrevolve/react-front-server/tree/skrevolve
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+# React + typescript
 
-### `npm test`
+# RESTful API SERVER (springboot)
+http://3.35.234.53:8080/test-docker
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# FRONT SERVER (nginx)
+아직미정
+http://localhost:3000
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# DB (mariadb)
+아직 미정
