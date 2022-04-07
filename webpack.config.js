@@ -18,6 +18,19 @@ module.exports = {
         use: 'ts-loader',
         exclude: /node_modules/,
       },
+      {
+        test: /\.(css)?$/,
+        use: ["style-loader", "css-loader"],
+      },
+      {
+        test: /\.jpg?$/,
+        use: {
+          loader: "file-loader",
+          options: {
+            outputPath: "images/",
+          },
+        },
+      },
     ],
   },
   output: {
