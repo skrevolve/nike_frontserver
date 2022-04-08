@@ -24,7 +24,7 @@
 http://3.35.234.53:8080/test-docker
 
 # FRONT SERVER (nginx)
-http://3.35.234.53:3000/
+http://skrevolve.org
 
 # DB (mariadb)
 3.35.234.53:3306/nike_db
