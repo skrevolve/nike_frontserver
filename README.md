@@ -1,4 +1,4 @@
-# NIKE 복제 사이트
+# 업무규칙
 - git checkout master (master 브런치로 이동한다)
 - git pull origin master
 - 내작업에 대한 내용을 이슈등록을 한다. (ex. 제목: 로그인 기능추가 내용: 작업내용 상세기입)
