@@ -66,7 +66,7 @@ return (
                                         <label>
                                             이름을 입력해 주세요.
                                         </label>
-                                        <input type="password"></input>
+                                        <input type="text"></input>
                                     </div>
                                 </div>
                                 <div className="form-row">
@@ -74,7 +74,7 @@ return (
                                         <label>
                                             휴대폰 번호 '-'표 없이 입력해 주세요.
                                         </label>
-                                        <input type="password"></input>
+                                        <input type="number"></input>
                                     </div>
                                 </div>
                                 {/* 이용약관 */}
