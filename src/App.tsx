@@ -1,17 +1,19 @@
 import React from "react";
-import logo from "./logo.svg";
+import { Routes,Route } from 'react-router-dom';
 import "./App.css";
-import Header from "./components/Header";
 import Sidebar from "./components/Sidebar";
-import Footer from "./components/Footer";
+import Login from "./components/Login";
+import Notice from "./components/Notice";
+
 
 function App() {
   return (
     <div className="App">
-      <Header />
-      <Sidebar />
-      {/* <div>!!!!!!!!!!!!!!!나이키 메인화면 수정중!!!!!!!!!!!!!</div> */}
-      <Footer />
+      <Routes>
+        <Route path="/Login" element={<Login/>} />
+        <Route path="/Notice" element={<Notice/>} />
+        <Route path="/Sidebar" element={<Sidebar/>} />
+      </Routes>
     </div>
   );
 }
