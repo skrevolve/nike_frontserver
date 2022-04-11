@@ -1,7 +1,7 @@
 import React from "react";
 import "../css/default.css";
 import "../css/Header.css";
-//import nike from "../images/shoe.jpg";
+import { Link } from 'react-router-dom';
 
 export default function Header() {
   return (
@@ -23,9 +23,9 @@ export default function Header() {
         <div className="desk-user">
           <ul>
             <li>
-              <a className="menu-item-link" href="#">
+              <Link to="/Notice" className="menu-item-link">
                 고객센터
-              </a>
+              </Link>
             </li>
             <li>
               <a className="menu-item-link" href="#">
@@ -33,9 +33,9 @@ export default function Header() {
               </a>
             </li>
             <li>
-              <a className="menu-item-link" href="#">
+              <Link to="/Login" className="menu-item-link">
                 로그인
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
@@ -43,23 +43,23 @@ export default function Header() {
       </div>
       {/* //header-top */}
       <div className="header">
-        <h1 className="logo">로고</h1>
+        <h1 className="logo"><Link to="/">로고</Link></h1>
         <div className="gnb">
           <ul>
             <li>
-              <a href="#">New Releases</a>
+              <Link to="/Sidebar">New Releases</Link>
             </li>
             <li>
-              <a href="#">Men</a>
+            <Link to="/Sidebar">Men</Link>
             </li>
             <li>
-              <a href="#">Women</a>
+            <Link to="/Sidebar">Women</Link>
             </li>
             <li>
-              <a href="#">Kids</a>
+            <Link to="/Sidebar">Kids</Link>
             </li>
             <li>
-              <a href="#">Sale</a>
+            <Link to="/Sidebar">Sale</Link>
             </li>
           </ul>
         </div>

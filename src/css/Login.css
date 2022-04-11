@@ -1,0 +1,16 @@
+.login {font-size: 14px; }
+.login_form {width: 480px; position: absolute; top: 20px; left: 50%; transform: translateX(-50%); padding: 20px; background: #fff; z-index: 1020; border:1px solid #ccc;}
+.login_contents h2 { padding: 130px 0 55px; font-size: 24px; font-weight: bold;}
+.login_contents .btn_close {position: absolute; top: 30px; right: 25px; font-size: 20px;}
+
+.login_input > input {width: 420px; height: 40px; padding: 9px 12px; border:1px solid #e5e5e5; color: #999; font-weight: bold;} 
+.user_id_box {margin-bottom: 20px;}
+
+.login_checkbox > span {float: left;}
+.login_checkbox .login_find {float: right;}
+/*button 공통*/
+.login_form .buttons button{width: 100%; height: 40px; padding: 13px 30px; border: none; font-size: 14px;}
+
+.btn_login button {background: #000;  color: #fff;}
+.btn_kakao button {background: #feec34;}
+.btn_facebook button {background: #21538a; color: #fff;}
