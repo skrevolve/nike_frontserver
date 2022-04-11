@@ -21,7 +21,7 @@
 5. 본인의 branch에 자기가 추가한거이외에는 master랑 내용이 똑같아야합니다 ~ 같은 파일을 여러명이 작업하고 있다면 이점을 주의해주세요
 
 # RESTful API SERVER (springboot)
-http://3.35.234.53:8080/test-docker
+http://skrevolve.org:8080/test-docker
 
 # FRONT SERVER (nginx)
 http://skrevolve.org
