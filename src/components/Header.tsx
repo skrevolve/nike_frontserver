@@ -28,9 +28,9 @@ export default function Header() {
               </Link>
             </li>
             <li>
-              <a className="menu-item-link" href="#">
+              <Link to="/Sighup" className="menu-item-link">
                 멤버 가입
-              </a>
+              </Link>
             </li>
             <li>
               <Link to="/Login" className="menu-item-link">
