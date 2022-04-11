@@ -1,0 +1,184 @@
+Index: src/components/Main.tsx
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import React from \"react\";\r\nimport \"../css/default.css\";\r\nimport \"../css/Main.css\";\r\n\r\nexport default function Main() {\r\nreturn (\r\n    <>\r\n        <div className=\"content-body\">\r\n            <div className=\"category\">\r\n                <div className=\"content-container\">\r\n                    <div>\r\n                        <div className=\"nav\">\r\n                            <div className=\"link-area\">\r\n                                <ul className=\"first-menu\">\r\n                                    <li className=\"menu1 active\"><a href=\"\">전체 보기</a></li>\r\n                                    <li className=\"menu2\"><a href=\"\">MEN</a></li>\r\n                                    <li className=\"menu3\"><a href=\"\">WOMEN</a></li>\r\n                                    <li className=\"menu4\"><a href=\"\">KIDS</a></li>\r\n                                </ul>\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n            <div className=\"nr-container\">\r\n                <ul className=\"item-list-wrap\">\r\n                    <li className=\"item-list\">\r\n                        <div className=\"product-item\">\r\n                            <div className=\"product-img\">\r\n                                <a href=\"\">\r\n                                    <img src=\"../images/a2b8a2c3-88b1-4403-9830-8e17005ebe16_primary.jpg\" alt=\"\"/>\r\n                                </a>\r\n                            </div>\r\n                        </div>\r\n                        <div className=\"product-info\">\r\n                            <div className=\"product-display\">\r\n                                <div className=\"product-info-area\">\r\n                                    <p className=\"product-display-name\">나이키 요가</p>\r\n                                    <div className=\"product-subtitle\">주니어 쇼츠</div>\r\n                                    <div className=\"item-color-opt\">1 컬러</div>\r\n                                </div>\r\n                                <div className=\"product-price\">\r\n                                    <p className=\"product-display-price\">31,900원</p>\r\n                                </div>\r\n                            </div>\r\n                        </div>\r\n                    </li>\r\n                    <li className=\"item-list\">\r\n                        <div className=\"product-item\">\r\n                            <div className=\"product-img\">\r\n                                <a href=\"\">\r\n                                    <img src=\"../images/a2b8a2c3-88b1-4403-9830-8e17005ebe16_primary.jpg\" alt=\"\"/>\r\n                                </a>\r\n                            </div>\r\n                        </div>\r\n                        <div className=\"product-info\">\r\n                            <div className=\"product-display\">\r\n                                <div className=\"product-info-area\">\r\n                                    <p className=\"product-display-name\">나이키 요가</p>\r\n                                    <div className=\"product-subtitle\">주니어 쇼츠</div>\r\n                                    <div className=\"item-color-opt\">1 컬러</div>\r\n                                </div>\r\n                                <div className=\"product-price\">\r\n                                    <p className=\"product-display-price\">31,900원</p>\r\n                                </div>\r\n                            </div>\r\n                        </div>\r\n                    </li>\r\n                    <li className=\"item-list\">\r\n                        <div className=\"product-item\">\r\n                            <div className=\"product-img\">\r\n                                <a href=\"\">\r\n                                    <img src=\"../images/a2b8a2c3-88b1-4403-9830-8e17005ebe16_primary.jpg\" alt=\"\"/>\r\n                                </a>\r\n                            </div>\r\n                        </div>\r\n                        <div className=\"product-info\">\r\n                            <div className=\"product-display\">\r\n                                <div className=\"product-info-area\">\r\n                                    <p className=\"product-display-name\">나이키 요가</p>\r\n                                    <div className=\"product-subtitle\">주니어 쇼츠</div>\r\n                                    <div className=\"item-color-opt\">1 컬러</div>\r\n                                </div>\r\n                                <div className=\"product-price\">\r\n                                    <p className=\"product-display-price\">31,900원</p>\r\n                                </div>\r\n                            </div>\r\n                        </div>\r\n                    </li>\r\n                    <li className=\"item-list\">\r\n                        <div className=\"product-item\">\r\n                            <div className=\"product-img\">\r\n                                <a href=\"\">\r\n                                    <img src=\"../images/a2b8a2c3-88b1-4403-9830-8e17005ebe16_primary.jpg\" alt=\"\"/>\r\n                                </a>\r\n                            </div>\r\n                        </div>\r\n                        <div className=\"product-info\">\r\n                            <div className=\"product-display\">\r\n                                <div className=\"product-info-area\">\r\n                                    <p className=\"product-display-name\">나이키 요가</p>\r\n                                    <div className=\"product-subtitle\">주니어 쇼츠</div>\r\n                                    <div className=\"item-color-opt\">1 컬러</div>\r\n                                </div>\r\n                                <div className=\"product-price\">\r\n                                    <p className=\"product-display-price\">31,900원</p>\r\n                                </div>\r\n                            </div>\r\n                        </div>\r\n                    </li>\r\n                    <li className=\"item-list\">\r\n                        <div className=\"product-item\">\r\n                            <div className=\"product-img\">\r\n                                <a href=\"\">\r\n                                    <img src=\"../images/a2b8a2c3-88b1-4403-9830-8e17005ebe16_primary.jpg\" alt=\"\"/>\r\n                                </a>\r\n                            </div>\r\n                        </div>\r\n                        <div className=\"product-info\">\r\n                            <div className=\"product-display\">\r\n                                <div className=\"product-info-area\">\r\n                                    <p className=\"product-display-name\">나이키 요가</p>\r\n                                    <div className=\"product-subtitle\">주니어 쇼츠</div>\r\n                                    <div className=\"item-color-opt\">1 컬러</div>\r\n                                </div>\r\n                                <div className=\"product-price\">\r\n                                    <p className=\"product-display-price\">31,900원</p>\r\n                                </div>\r\n                            </div>\r\n                        </div>\r\n                    </li>\r\n                    <li className=\"item-list\">\r\n                        <div className=\"product-item\">\r\n                            <div className=\"product-img\">\r\n                                <a href=\"\">\r\n                                    <img src=\"../images/a2b8a2c3-88b1-4403-9830-8e17005ebe16_primary.jpg\" alt=\"\"/>\r\n                                </a>\r\n                            </div>\r\n                        </div>\r\n                        <div className=\"product-info\">\r\n                            <div className=\"product-display\">\r\n                                <div className=\"product-info-area\">\r\n                                    <p className=\"product-display-name\">나이키 요가</p>\r\n                                    <div className=\"product-subtitle\">주니어 쇼츠</div>\r\n                                    <div className=\"item-color-opt\">1 컬러</div>\r\n                                </div>\r\n                                <div className=\"product-price\">\r\n                                    <p className=\"product-display-price\">31,900원</p>\r\n                                </div>\r\n                            </div>\r\n                        </div>\r\n                    </li>\r\n                    <li className=\"item-list\">\r\n                        <div className=\"product-item\">\r\n                            <div className=\"product-img\">\r\n                                <a href=\"\">\r\n                                    <img src=\"../images/a2b8a2c3-88b1-4403-9830-8e17005ebe16_primary.jpg\" alt=\"\"/>\r\n                                </a>\r\n                            </div>\r\n                        </div>\r\n                        <div className=\"product-info\">\r\n                            <div className=\"product-display\">\r\n                                <div className=\"product-info-area\">\r\n                                    <p className=\"product-display-name\">나이키 요가</p>\r\n                                    <div className=\"product-subtitle\">주니어 쇼츠</div>\r\n                                    <div className=\"item-color-opt\">1 컬러</div>\r\n                                </div>\r\n                                <div className=\"product-price\">\r\n                                    <p className=\"product-display-price\">31,900원</p>\r\n                                </div>\r\n                            </div>\r\n                        </div>\r\n                    </li>\r\n                    <li className=\"item-list\">\r\n                        <div className=\"product-item\">\r\n                            <div className=\"product-img\">\r\n                                <a href=\"\">\r\n                                    <img src=\"../images/a2b8a2c3-88b1-4403-9830-8e17005ebe16_primary.jpg\" alt=\"\"/>\r\n                                </a>\r\n                            </div>\r\n                        </div>\r\n                        <div className=\"product-info\">\r\n                            <div className=\"product-display\">\r\n                                <div className=\"product-info-area\">\r\n                                    <p className=\"product-display-name\">나이키 요가</p>\r\n                                    <div className=\"product-subtitle\">주니어 쇼츠</div>\r\n                                    <div className=\"item-color-opt\">1 컬러</div>\r\n                                </div>\r\n                                <div className=\"product-price\">\r\n                                    <p className=\"product-display-price\">31,900원</p>\r\n                                </div>\r\n                            </div>\r\n                        </div>\r\n                    </li>\r\n                    <li className=\"item-list\">\r\n                        <div className=\"product-item\">\r\n                            <div className=\"product-img\">\r\n                                <a href=\"\">\r\n                                    <img src=\"../images/a2b8a2c3-88b1-4403-9830-8e17005ebe16_primary.jpg\" alt=\"\"/>\r\n                                </a>\r\n                            </div>\r\n                        </div>\r\n                        <div className=\"product-info\">\r\n                            <div className=\"product-display\">\r\n                                <div className=\"product-info-area\">\r\n                                    <p className=\"product-display-name\">나이키 요가</p>\r\n                                    <div className=\"product-subtitle\">주니어 쇼츠</div>\r\n                                    <div className=\"item-color-opt\">1 컬러</div>\r\n                                </div>\r\n                                <div className=\"product-price\">\r\n                                    <p className=\"product-display-price\">31,900원</p>\r\n                                </div>\r\n                            </div>\r\n                        </div>\r\n                    </li>\r\n                    <li className=\"item-list\">\r\n                        <div className=\"product-item\">\r\n                            <div className=\"product-img\">\r\n                                <a href=\"\">\r\n                                    <img src=\"../images/a2b8a2c3-88b1-4403-9830-8e17005ebe16_primary.jpg\" alt=\"\"/>\r\n                                </a>\r\n                            </div>\r\n                        </div>\r\n                        <div className=\"product-info\">\r\n                            <div className=\"product-display\">\r\n                                <div className=\"product-info-area\">\r\n                                    <p className=\"product-display-name\">나이키 요가</p>\r\n                                    <div className=\"product-subtitle\">주니어 쇼츠</div>\r\n                                    <div className=\"item-color-opt\">1 컬러</div>\r\n                                </div>\r\n                                <div className=\"product-price\">\r\n                                    <p className=\"product-display-price\">31,900원</p>\r\n                                </div>\r\n                            </div>\r\n                        </div>\r\n                    </li>\r\n                    <li className=\"item-list\">\r\n                        <div className=\"product-item\">\r\n                            <div className=\"product-img\">\r\n                                <a href=\"\">\r\n                                    <img src=\"../images/a2b8a2c3-88b1-4403-9830-8e17005ebe16_primary.jpg\" alt=\"\"/>\r\n                                </a>\r\n                            </div>\r\n                        </div>\r\n                        <div className=\"product-info\">\r\n                            <div className=\"product-display\">\r\n                                <div className=\"product-info-area\">\r\n                                    <p className=\"product-display-name\">나이키 요가</p>\r\n                                    <div className=\"product-subtitle\">주니어 쇼츠</div>\r\n                                    <div className=\"item-color-opt\">1 컬러</div>\r\n                                </div>\r\n                                <div className=\"product-price\">\r\n                                    <p className=\"product-display-price\">31,900원</p>\r\n                                </div>\r\n                            </div>\r\n                        </div>\r\n                    </li>\r\n                </ul>\r\n            </div>\r\n        </div>\r\n    </>\r\n);\r\n}\r\n
+===================================================================
+diff --git a/src/components/Main.tsx b/src/components/Main.tsx
+--- a/src/components/Main.tsx	
++++ b/src/components/Main.tsx	
+@@ -28,91 +28,7 @@
+                         <div className="product-item">
+                             <div className="product-img">
+                                 <a href="">
+-                                    <img src="../images/a2b8a2c3-88b1-4403-9830-8e17005ebe16_primary.jpg" alt=""/>
+-                                </a>
+-                            </div>
+-                        </div>
+-                        <div className="product-info">
+-                            <div className="product-display">
+-                                <div className="product-info-area">
+-                                    <p className="product-display-name">나이키 요가</p>
+-                                    <div className="product-subtitle">주니어 쇼츠</div>
+-                                    <div className="item-color-opt">1 컬러</div>
+-                                </div>
+-                                <div className="product-price">
+-                                    <p className="product-display-price">31,900원</p>
+-                                </div>
+-                            </div>
+-                        </div>
+-                    </li>
+-                    <li className="item-list">
+-                        <div className="product-item">
+-                            <div className="product-img">
+-                                <a href="">
+-                                    <img src="../images/a2b8a2c3-88b1-4403-9830-8e17005ebe16_primary.jpg" alt=""/>
+-                                </a>
+-                            </div>
+-                        </div>
+-                        <div className="product-info">
+-                            <div className="product-display">
+-                                <div className="product-info-area">
+-                                    <p className="product-display-name">나이키 요가</p>
+-                                    <div className="product-subtitle">주니어 쇼츠</div>
+-                                    <div className="item-color-opt">1 컬러</div>
+-                                </div>
+-                                <div className="product-price">
+-                                    <p className="product-display-price">31,900원</p>
+-                                </div>
+-                            </div>
+-                        </div>
+-                    </li>
+-                    <li className="item-list">
+-                        <div className="product-item">
+-                            <div className="product-img">
+-                                <a href="">
+-                                    <img src="../images/a2b8a2c3-88b1-4403-9830-8e17005ebe16_primary.jpg" alt=""/>
+-                                </a>
+-                            </div>
+-                        </div>
+-                        <div className="product-info">
+-                            <div className="product-display">
+-                                <div className="product-info-area">
+-                                    <p className="product-display-name">나이키 요가</p>
+-                                    <div className="product-subtitle">주니어 쇼츠</div>
+-                                    <div className="item-color-opt">1 컬러</div>
+-                                </div>
+-                                <div className="product-price">
+-                                    <p className="product-display-price">31,900원</p>
+-                                </div>
+-                            </div>
+-                        </div>
+-                    </li>
+-                    <li className="item-list">
+-                        <div className="product-item">
+-                            <div className="product-img">
+-                                <a href="">
+-                                    <img src="../images/a2b8a2c3-88b1-4403-9830-8e17005ebe16_primary.jpg" alt=""/>
+-                                </a>
+-                            </div>
+-                        </div>
+-                        <div className="product-info">
+-                            <div className="product-display">
+-                                <div className="product-info-area">
+-                                    <p className="product-display-name">나이키 요가</p>
+-                                    <div className="product-subtitle">주니어 쇼츠</div>
+-                                    <div className="item-color-opt">1 컬러</div>
+-                                </div>
+-                                <div className="product-price">
+-                                    <p className="product-display-price">31,900원</p>
+-                                </div>
+-                            </div>
+-                        </div>
+-                    </li>
+-                    <li className="item-list">
+-                        <div className="product-item">
+-                            <div className="product-img">
+-                                <a href="">
+-                                    <img src="../images/a2b8a2c3-88b1-4403-9830-8e17005ebe16_primary.jpg" alt=""/>
++                                    <img src={require("../images/a2b8a2c3-88b1-4403-9830-8e17005ebe16_primary.jpg")} alt=""/>
+                                 </a>
+                             </div>
+                         </div>
+@@ -133,7 +49,7 @@
+                         <div className="product-item">
+                             <div className="product-img">
+                                 <a href="">
+-                                    <img src="../images/a2b8a2c3-88b1-4403-9830-8e17005ebe16_primary.jpg" alt=""/>
++                                    <img src={require("../images/a2b8a2c3-88b1-4403-9830-8e17005ebe16_primary.jpg")} alt=""/>
+                                 </a>
+                             </div>
+                         </div>
+@@ -154,7 +70,7 @@
+                         <div className="product-item">
+                             <div className="product-img">
+                                 <a href="">
+-                                    <img src="../images/a2b8a2c3-88b1-4403-9830-8e17005ebe16_primary.jpg" alt=""/>
++                                    <img src={require("../images/a2b8a2c3-88b1-4403-9830-8e17005ebe16_primary.jpg")} alt=""/>
+                                 </a>
+                             </div>
+                         </div>
+@@ -175,7 +91,7 @@
+                         <div className="product-item">
+                             <div className="product-img">
+                                 <a href="">
+-                                    <img src="../images/a2b8a2c3-88b1-4403-9830-8e17005ebe16_primary.jpg" alt=""/>
++                                    <img src={require("../images/a2b8a2c3-88b1-4403-9830-8e17005ebe16_primary.jpg")} alt=""/>
+                                 </a>
+                             </div>
+                         </div>
+@@ -196,7 +112,7 @@
+                         <div className="product-item">
+                             <div className="product-img">
+                                 <a href="">
+-                                    <img src="../images/a2b8a2c3-88b1-4403-9830-8e17005ebe16_primary.jpg" alt=""/>
++                                    <img src={require("../images/a2b8a2c3-88b1-4403-9830-8e17005ebe16_primary.jpg")} alt=""/>
+                                 </a>
+                             </div>
+                         </div>
+@@ -217,28 +133,7 @@
+                         <div className="product-item">
+                             <div className="product-img">
+                                 <a href="">
+-                                    <img src="../images/a2b8a2c3-88b1-4403-9830-8e17005ebe16_primary.jpg" alt=""/>
+-                                </a>
+-                            </div>
+-                        </div>
+-                        <div className="product-info">
+-                            <div className="product-display">
+-                                <div className="product-info-area">
+-                                    <p className="product-display-name">나이키 요가</p>
+-                                    <div className="product-subtitle">주니어 쇼츠</div>
+-                                    <div className="item-color-opt">1 컬러</div>
+-                                </div>
+-                                <div className="product-price">
+-                                    <p className="product-display-price">31,900원</p>
+-                                </div>
+-                            </div>
+-                        </div>
+-                    </li>
+-                    <li className="item-list">
+-                        <div className="product-item">
+-                            <div className="product-img">
+-                                <a href="">
+-                                    <img src="../images/a2b8a2c3-88b1-4403-9830-8e17005ebe16_primary.jpg" alt=""/>
++                                    <img src={require("../images/a2b8a2c3-88b1-4403-9830-8e17005ebe16_primary.jpg")} alt=""/>
+                                 </a>
+                             </div>
+                         </div>
+Index: src/css/Main.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>.content-body {\r\n    min-height: 330px;\r\n    min-width: 320px;\r\n    margin-left: 318px;\r\n    margin-right: 48px;\r\n    transition: margin-left 0.3s;\r\n}\r\n.content-container {\r\n    overflow: visible;\r\n}\r\n.content-container .nav {\r\n    width: 1537px;\r\n    top: 0px;\r\n    position: static;\r\n    padding: 10px 0;\r\n    background: #fff;\r\n    margin: 0 auto;\r\n}\r\n.link-area {\r\n    position: relative;\r\n    width: 100%;\r\n    text-align: center;\r\n    background-color: white;\r\n}\r\n.first-menu {\r\n    height: 100%;\r\n    margin: 0 auto;\r\n}\r\n.first-menu li.active {\r\n    background: #111;\r\n    border: 1px solid #111;\r\n}\r\n.first-menu li {\r\n    display: inline-block;\r\n    height: 100%;\r\n    margin-right: 10px;\r\n    padding: 8px 16px;\r\n    background: #e9e9e9;\r\n    border-radius: 5px;\r\n    border: 1px solid #e9e9e9;\r\n}\r\n.first-menu li.active a {\r\n    color: #fff;\r\n}\r\n.first-menu li a {\r\n    color: #787878;\r\n}\r\n\r\n.nr-container {\r\n    padding-left: 0;\r\n    padding-right: 0;\r\n}\r\n.item-list-wrap {\r\n    display: flex;\r\n    flex-wrap: wrap;\r\n}\r\n.item-list-wrap li {\r\n    width: 30%;\r\n    display: inline-block;\r\n}\r\n.item-list {\r\n    padding-left: 8px;\r\n    padding-right: 8px;\r\n}\r\n.product-item {\r\n    overflow: hidden;\r\n}\r\n.product-img {\r\n    position: relative;\r\n    z-index: 2;\r\n    background: whitesmoke;\r\n    width: 100%;\r\n}\r\n.product-img img {\r\n    width: 100%;\r\n    height: 100%;\r\n    vertical-align: top;\r\n}\r\n.product-info {\r\n    text-align: left;\r\n    padding-top: 12px;\r\n}\r\n.product-info .product-display {\r\n    display: flex;\r\n    justify-content: space-between;\r\n    word-break: keep-all;\r\n    line-height: 1.6em;\r\n    letter-spacing: -0.5px;\r\n}\r\n.product-info-area {\r\n    width: 66.6%;\r\n    padding-right: 15px;\r\n}\r\n.product-price {\r\n    padding-right: 10px;\r\n}\r\n.product-display-name {\r\n    line-height: 1.4em;\r\n}\r\n.item-color-opt {\r\n    padding-top: 3px;\r\n}\r\n.product-display-price {\r\n    white-space: nowrap;\r\n}\r\n
+===================================================================
+diff --git a/src/css/Main.css b/src/css/Main.css
+--- a/src/css/Main.css	
++++ b/src/css/Main.css	
+@@ -55,7 +55,7 @@
+     flex-wrap: wrap;
+ }
+ .item-list-wrap li {
+-    width: 30%;
++    width: 32%;
+     display: inline-block;
+ }
+ .item-list {

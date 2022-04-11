@@ -1,0 +1,511 @@
+Index: src/App.tsx
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import React from \"react\";\r\nimport { Routes,Route } from 'react-router-dom';\r\nimport \"./App.css\";\r\nimport Sidebar from \"./components/Sidebar\";\r\nimport Login from \"./components/Login\";\r\nimport Notice from \"./components/Notice\";\r\n\r\n\r\nfunction App() {\r\n  return (\r\n    <div className=\"App\">\r\n      <Routes>\r\n        <Route path=\"/Login\" element={<Login/>} />\r\n        <Route path=\"/Notice\" element={<Notice/>} />\r\n        <Route path=\"/Sidebar\" element={<Sidebar/>} />\r\n      </Routes>\r\n    </div>\r\n  );\r\n}\r\n\r\nexport default App;\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/App.tsx b/src/App.tsx
+--- a/src/App.tsx	(revision c9eab5176a6ecf8c1daa617f6435e10738d1ad25)
++++ b/src/App.tsx	(date 1649643184257)
+@@ -1,7 +1,7 @@
+ import React from "react";
+ import { Routes,Route } from 'react-router-dom';
+ import "./App.css";
+-import Sidebar from "./components/Sidebar";
++import NR_page from "./pages/NR_page";
+ import Login from "./components/Login";
+ import Notice from "./components/Notice";
+ 
+@@ -12,7 +12,7 @@
+       <Routes>
+         <Route path="/Login" element={<Login/>} />
+         <Route path="/Notice" element={<Notice/>} />
+-        <Route path="/Sidebar" element={<Sidebar/>} />
++        <Route path="/NR_page" element={<NR_page/>} />
+       </Routes>
+     </div>
+   );
+Index: package.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>{\r\n  \"name\": \"my-app\",\r\n  \"version\": \"0.1.0\",\r\n  \"private\": true,\r\n  \"dependencies\": {\r\n    \"@testing-library/jest-dom\": \"^5.16.4\",\r\n    \"@testing-library/react\": \"^12.1.4\",\r\n    \"@testing-library/user-event\": \"^13.5.0\",\r\n    \"@types/jest\": \"^27.4.1\",\r\n    \"@types/node\": \"^16.11.26\",\r\n    \"@types/react\": \"^17.0.43\",\r\n    \"@types/react-dom\": \"^17.0.14\",\r\n    \"react\": \"^18.0.0\",\r\n    \"react-dom\": \"^18.0.0\",\r\n    \"react-router-dom\": \"^6.3.0\",\r\n    \"react-scripts\": \"5.0.0\",\r\n    \"typescript\": \"^4.6.3\",\r\n    \"web-vitals\": \"^2.1.4\"\r\n  },\r\n  \"scripts\": {\r\n    \"start\": \"react-scripts start\",\r\n    \"build\": \"react-scripts build\",\r\n    \"test\": \"react-scripts test\",\r\n    \"eject\": \"react-scripts eject\"\r\n  },\r\n  \"eslintConfig\": {\r\n    \"extends\": [\r\n      \"react-app\",\r\n      \"react-app/jest\"\r\n    ]\r\n  },\r\n  \"browserslist\": {\r\n    \"production\": [\r\n      \">0.2%\",\r\n      \"not dead\",\r\n      \"not op_mini all\"\r\n    ],\r\n    \"development\": [\r\n      \"last 1 chrome version\",\r\n      \"last 1 firefox version\",\r\n      \"last 1 safari version\"\r\n    ]\r\n  }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/package.json b/package.json
+--- a/package.json	(revision c9eab5176a6ecf8c1daa617f6435e10738d1ad25)
++++ b/package.json	(date 1649642569863)
+@@ -10,6 +10,7 @@
+     "@types/node": "^16.11.26",
+     "@types/react": "^17.0.43",
+     "@types/react-dom": "^17.0.14",
++    "file-loader": "^6.2.0",
+     "react": "^18.0.0",
+     "react-dom": "^18.0.0",
+     "react-router-dom": "^6.3.0",
+Index: src/css/Sidebar.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>\r\n\r\n.top-side {\r\n    padding: 40px 48px 30px 48px;\r\n    display: flex;\r\n    flex-direction: row;\r\n    flex-wrap: nowrap;\r\n    justify-content: space-between;\r\n}\r\n.top-side .title-section .tit-txt {\r\n    font-size: 20px;\r\n    font-weight: 700;\r\n    letter-spacing: -1px;\r\n}\r\n.top-side .filter-section {\r\n    display: flex;\r\n}\r\n.top-side .filter-section .filter-btn {\r\n    background-color: #fff;\r\n    border: none;\r\n    font-size: 16px;\r\n    font-weight: 700;\r\n    cursor: pointer;\r\n}\r\n.top-side .filter-section .filter-btn:hover {\r\n    color: #777;\r\n}\r\n.top-side .filter-section .select-btn {\r\n    margin-left: 30px;\r\n    padding-top: 4.3px;\r\n    font-weight: 700;\r\n    cursor: pointer;\r\n}\r\n.top-side .filter-section .select-btn:hover {\r\n    color: #777;\r\n}\r\n\r\n\r\n\r\n.left-side {\r\n    width: 280px;\r\n    /* float: left; */\r\n}\r\n.left-side .left-side-inner {\r\n    padding: 30px 48px 0 48px;\r\n    margin: 0;\r\n}\r\n.left-side .left-side-inner .inner-section {\r\n    border-top: 1px solid #e5e5e5;\r\n    padding-top: 21px;\r\n}\r\n.left-side .left-side-inner .inner-section .section-tit {\r\n    text-align: left;\r\n    padding-bottom: 22px;\r\n    font-size: 16px;\r\n    font-weight: bold;\r\n    color: #111;\r\n    cursor: pointer;\r\n}\r\n.left-side .left-side-inner .inner-section .section-wrap {\r\n    height: auto;\r\n}\r\n.left-side .left-side-inner .inner-section .section-wrap .s-item-wrap {\r\n    padding-bottom: 30px;\r\n}\r\n.left-side .left-side-inner .inner-section .section-wrap .s-item-wrap .s-item .input-checkbox {\r\n    padding: 4px 0;\r\n    display: flex;\r\n    align-items: center;\r\n}\r\n.left-side .left-side-inner .inner-section .section-wrap .s-item-wrap .s-item .input-checkbox input {\r\n    width: 20px;\r\n    height: 20px;\r\n    margin-left: 0;\r\n    margin-right: 6px;\r\n    cursor: pointer;\r\n}\r\n.left-side .left-side-inner .inner-section .section-wrap .s-item-wrap .s-item .input-checkbox span {\r\n    font-size: 15px;\r\n    font-weight: bold;\r\n    cursor: pointer;\r\n}\r\n.left-side .left-side-inner .inner-section .section-wrap .s-item-wrap .s-item .input-checkbox span:hover {\r\n    color: #777;\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/css/Sidebar.css b/src/css/Sidebar.css
+--- a/src/css/Sidebar.css	(revision c9eab5176a6ecf8c1daa617f6435e10738d1ad25)
++++ b/src/css/Sidebar.css	(date 1649643484804)
+@@ -39,7 +39,7 @@
+ 
+ .left-side {
+     width: 280px;
+-    /* float: left; */
++    float: left;
+ }
+ .left-side .left-side-inner {
+     padding: 30px 48px 0 48px;
+Index: package-lock.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/package-lock.json b/package-lock.json
+--- a/package-lock.json	(revision c9eab5176a6ecf8c1daa617f6435e10738d1ad25)
++++ b/package-lock.json	(date 1649642569862)
+@@ -15,6 +15,7 @@
+         "@types/node": "^16.11.26",
+         "@types/react": "^17.0.43",
+         "@types/react-dom": "^17.0.14",
++        "file-loader": "^6.2.0",
+         "react": "^18.0.0",
+         "react-dom": "^18.0.0",
+         "react-router-dom": "^6.3.0",
+Index: src/components/Header.tsx
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import React from \"react\";\r\nimport \"../css/default.css\";\r\nimport \"../css/Header.css\";\r\nimport { Link } from 'react-router-dom';\r\n\r\nexport default function Header() {\r\n  return (\r\n    <header>\r\n      <div className=\"header-top\">\r\n        <div className=\"nk-brand\">\r\n          <ul className=\"nk-brand-item\">\r\n            <li>\r\n              <a href=\"#\">\r\n                <img src=\"http://localhost:8080/images/shoe.jpg\" alt=\"\" />\r\n              </a>\r\n            </li>\r\n            <li>\r\n              <a href=\"#\">컨버스</a>\r\n            </li>\r\n          </ul>\r\n        </div>\r\n        {/* // nk-brand */}\r\n        <div className=\"desk-user\">\r\n          <ul>\r\n            <li>\r\n              <Link to=\"/Notice\" className=\"menu-item-link\">\r\n                고객센터\r\n              </Link>\r\n            </li>\r\n            <li>\r\n              <a className=\"menu-item-link\" href=\"#\">\r\n                멤버 가입\r\n              </a>\r\n            </li>\r\n            <li>\r\n              <Link to=\"/Login\" className=\"menu-item-link\">\r\n                로그인\r\n              </Link>\r\n            </li>\r\n          </ul>\r\n        </div>\r\n        {/* // desk-user */}\r\n      </div>\r\n      {/* //header-top */}\r\n      <div className=\"header\">\r\n        <h1 className=\"logo\"><Link to=\"/\">로고</Link></h1>\r\n        <div className=\"gnb\">\r\n          <ul>\r\n            <li>\r\n              <Link to=\"/Sidebar\">New Releases</Link>\r\n            </li>\r\n            <li>\r\n            <Link to=\"/Sidebar\">Men</Link>\r\n            </li>\r\n            <li>\r\n            <Link to=\"/Sidebar\">Women</Link>\r\n            </li>\r\n            <li>\r\n            <Link to=\"/Sidebar\">Kids</Link>\r\n            </li>\r\n            <li>\r\n            <Link to=\"/Sidebar\">Sale</Link>\r\n            </li>\r\n          </ul>\r\n        </div>\r\n        <div className=\"menu-opt\">\r\n          <div>\r\n            <input type=\"search\" />\r\n            <button>검색</button>\r\n          </div>\r\n          <div>\r\n            <button>찜목록</button>\r\n            <button>장바구니</button>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </header>\r\n  );\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/components/Header.tsx b/src/components/Header.tsx
+--- a/src/components/Header.tsx	(revision c9eab5176a6ecf8c1daa617f6435e10738d1ad25)
++++ b/src/components/Header.tsx	(date 1649643347586)
+@@ -47,7 +47,7 @@
+         <div className="gnb">
+           <ul>
+             <li>
+-              <Link to="/Sidebar">New Releases</Link>
++              <Link to="/NR_page">New Releases</Link>
+             </li>
+             <li>
+             <Link to="/Sidebar">Men</Link>
+Index: src/css/Main.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/css/Main.css b/src/css/Main.css
+new file mode 100644
+--- /dev/null	(date 1649643892529)
++++ b/src/css/Main.css	(date 1649643892529)
+@@ -0,0 +1,105 @@
++.content-body {
++    min-height: 330px;
++    min-width: 320px;
++    margin-left: 318px;
++    margin-right: 48px;
++    transition: margin-left 0.3s;
++}
++.content-container {
++    overflow: visible;
++}
++.content-container .nav {
++    width: 1537px;
++    top: 0px;
++    position: static;
++    padding: 10px 0;
++    background: #fff;
++    margin: 0 auto;
++}
++.link-area {
++    position: relative;
++    width: 100%;
++    text-align: center;
++    background-color: white;
++}
++.first-menu {
++    height: 100%;
++    margin: 0 auto;
++}
++.first-menu li.active {
++    background: #111;
++    border: 1px solid #111;
++}
++.first-menu li {
++    display: inline-block;
++    height: 100%;
++    margin-right: 10px;
++    padding: 8px 16px;
++    background: #e9e9e9;
++    border-radius: 5px;
++    border: 1px solid #e9e9e9;
++}
++.first-menu li.active a {
++    color: #fff;
++}
++.first-menu li a {
++    color: #787878;
++}
++
++.nr-container {
++    padding-left: 0;
++    padding-right: 0;
++}
++.item-list-wrap {
++    display: flex;
++    flex-wrap: wrap;
++}
++.item-list-wrap li {
++    width: 30%;
++    display: inline-block;
++}
++.item-list {
++    padding-left: 8px;
++    padding-right: 8px;
++}
++.product-item {
++    overflow: hidden;
++}
++.product-img {
++    position: relative;
++    z-index: 2;
++    background: whitesmoke;
++    width: 100%;
++}
++.product-img img {
++    width: 100%;
++    height: 100%;
++    vertical-align: top;
++}
++.product-info {
++    text-align: left;
++    padding-top: 12px;
++}
++.product-info .product-display {
++    display: flex;
++    justify-content: space-between;
++    word-break: keep-all;
++    line-height: 1.6em;
++    letter-spacing: -0.5px;
++}
++.product-info-area {
++    width: 66.6%;
++    padding-right: 15px;
++}
++.product-price {
++    padding-right: 10px;
++}
++.product-display-name {
++    line-height: 1.4em;
++}
++.item-color-opt {
++    padding-top: 3px;
++}
++.product-display-price {
++    white-space: nowrap;
++}
+Index: src/pages/NR_page.tsx
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/pages/NR_page.tsx b/src/pages/NR_page.tsx
+new file mode 100644
+--- /dev/null	(date 1649643140460)
++++ b/src/pages/NR_page.tsx	(date 1649643140460)
+@@ -0,0 +1,12 @@
++import React from "react";
++import Sidebar from "../components/Sidebar";
++import Main from "../components/Main";
++
++export default function NR_page() {
++    return (
++        <>
++            <Sidebar/>
++            <Main/>
++        </>
++    )
++}
+\ No newline at end of file
+Index: src/components/Main.tsx
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/components/Main.tsx b/src/components/Main.tsx
+new file mode 100644
+--- /dev/null	(date 1649643810253)
++++ b/src/components/Main.tsx	(date 1649643810253)
+@@ -0,0 +1,263 @@
++import React from "react";
++import "../css/default.css";
++import "../css/Main.css";
++
++export default function Main() {
++return (
++    <>
++        <div className="content-body">
++            <div className="category">
++                <div className="content-container">
++                    <div>
++                        <div className="nav">
++                            <div className="link-area">
++                                <ul className="first-menu">
++                                    <li className="menu1 active"><a href="">전체 보기</a></li>
++                                    <li className="menu2"><a href="">MEN</a></li>
++                                    <li className="menu3"><a href="">WOMEN</a></li>
++                                    <li className="menu4"><a href="">KIDS</a></li>
++                                </ul>
++                            </div>
++                        </div>
++                    </div>
++                </div>
++            </div>
++            <div className="nr-container">
++                <ul className="item-list-wrap">
++                    <li className="item-list">
++                        <div className="product-item">
++                            <div className="product-img">
++                                <a href="">
++                                    <img src="../images/a2b8a2c3-88b1-4403-9830-8e17005ebe16_primary.jpg" alt=""/>
++                                </a>
++                            </div>
++                        </div>
++                        <div className="product-info">
++                            <div className="product-display">
++                                <div className="product-info-area">
++                                    <p className="product-display-name">나이키 요가</p>
++                                    <div className="product-subtitle">주니어 쇼츠</div>
++                                    <div className="item-color-opt">1 컬러</div>
++                                </div>
++                                <div className="product-price">
++                                    <p className="product-display-price">31,900원</p>
++                                </div>
++                            </div>
++                        </div>
++                    </li>
++                    <li className="item-list">
++                        <div className="product-item">
++                            <div className="product-img">
++                                <a href="">
++                                    <img src="../images/a2b8a2c3-88b1-4403-9830-8e17005ebe16_primary.jpg" alt=""/>
++                                </a>
++                            </div>
++                        </div>
++                        <div className="product-info">
++                            <div className="product-display">
++                                <div className="product-info-area">
++                                    <p className="product-display-name">나이키 요가</p>
++                                    <div className="product-subtitle">주니어 쇼츠</div>
++                                    <div className="item-color-opt">1 컬러</div>
++                                </div>
++                                <div className="product-price">
++                                    <p className="product-display-price">31,900원</p>
++                                </div>
++                            </div>
++                        </div>
++                    </li>
++                    <li className="item-list">
++                        <div className="product-item">
++                            <div className="product-img">
++                                <a href="">
++                                    <img src="../images/a2b8a2c3-88b1-4403-9830-8e17005ebe16_primary.jpg" alt=""/>
++                                </a>
++                            </div>
++                        </div>
++                        <div className="product-info">
++                            <div className="product-display">
++                                <div className="product-info-area">
++                                    <p className="product-display-name">나이키 요가</p>
++                                    <div className="product-subtitle">주니어 쇼츠</div>
++                                    <div className="item-color-opt">1 컬러</div>
++                                </div>
++                                <div className="product-price">
++                                    <p className="product-display-price">31,900원</p>
++                                </div>
++                            </div>
++                        </div>
++                    </li>
++                    <li className="item-list">
++                        <div className="product-item">
++                            <div className="product-img">
++                                <a href="">
++                                    <img src="../images/a2b8a2c3-88b1-4403-9830-8e17005ebe16_primary.jpg" alt=""/>
++                                </a>
++                            </div>
++                        </div>
++                        <div className="product-info">
++                            <div className="product-display">
++                                <div className="product-info-area">
++                                    <p className="product-display-name">나이키 요가</p>
++                                    <div className="product-subtitle">주니어 쇼츠</div>
++                                    <div className="item-color-opt">1 컬러</div>
++                                </div>
++                                <div className="product-price">
++                                    <p className="product-display-price">31,900원</p>
++                                </div>
++                            </div>
++                        </div>
++                    </li>
++                    <li className="item-list">
++                        <div className="product-item">
++                            <div className="product-img">
++                                <a href="">
++                                    <img src="../images/a2b8a2c3-88b1-4403-9830-8e17005ebe16_primary.jpg" alt=""/>
++                                </a>
++                            </div>
++                        </div>
++                        <div className="product-info">
++                            <div className="product-display">
++                                <div className="product-info-area">
++                                    <p className="product-display-name">나이키 요가</p>
++                                    <div className="product-subtitle">주니어 쇼츠</div>
++                                    <div className="item-color-opt">1 컬러</div>
++                                </div>
++                                <div className="product-price">
++                                    <p className="product-display-price">31,900원</p>
++                                </div>
++                            </div>
++                        </div>
++                    </li>
++                    <li className="item-list">
++                        <div className="product-item">
++                            <div className="product-img">
++                                <a href="">
++                                    <img src="../images/a2b8a2c3-88b1-4403-9830-8e17005ebe16_primary.jpg" alt=""/>
++                                </a>
++                            </div>
++                        </div>
++                        <div className="product-info">
++                            <div className="product-display">
++                                <div className="product-info-area">
++                                    <p className="product-display-name">나이키 요가</p>
++                                    <div className="product-subtitle">주니어 쇼츠</div>
++                                    <div className="item-color-opt">1 컬러</div>
++                                </div>
++                                <div className="product-price">
++                                    <p className="product-display-price">31,900원</p>
++                                </div>
++                            </div>
++                        </div>
++                    </li>
++                    <li className="item-list">
++                        <div className="product-item">
++                            <div className="product-img">
++                                <a href="">
++                                    <img src="../images/a2b8a2c3-88b1-4403-9830-8e17005ebe16_primary.jpg" alt=""/>
++                                </a>
++                            </div>
++                        </div>
++                        <div className="product-info">
++                            <div className="product-display">
++                                <div className="product-info-area">
++                                    <p className="product-display-name">나이키 요가</p>
++                                    <div className="product-subtitle">주니어 쇼츠</div>
++                                    <div className="item-color-opt">1 컬러</div>
++                                </div>
++                                <div className="product-price">
++                                    <p className="product-display-price">31,900원</p>
++                                </div>
++                            </div>
++                        </div>
++                    </li>
++                    <li className="item-list">
++                        <div className="product-item">
++                            <div className="product-img">
++                                <a href="">
++                                    <img src="../images/a2b8a2c3-88b1-4403-9830-8e17005ebe16_primary.jpg" alt=""/>
++                                </a>
++                            </div>
++                        </div>
++                        <div className="product-info">
++                            <div className="product-display">
++                                <div className="product-info-area">
++                                    <p className="product-display-name">나이키 요가</p>
++                                    <div className="product-subtitle">주니어 쇼츠</div>
++                                    <div className="item-color-opt">1 컬러</div>
++                                </div>
++                                <div className="product-price">
++                                    <p className="product-display-price">31,900원</p>
++                                </div>
++                            </div>
++                        </div>
++                    </li>
++                    <li className="item-list">
++                        <div className="product-item">
++                            <div className="product-img">
++                                <a href="">
++                                    <img src="../images/a2b8a2c3-88b1-4403-9830-8e17005ebe16_primary.jpg" alt=""/>
++                                </a>
++                            </div>
++                        </div>
++                        <div className="product-info">
++                            <div className="product-display">
++                                <div className="product-info-area">
++                                    <p className="product-display-name">나이키 요가</p>
++                                    <div className="product-subtitle">주니어 쇼츠</div>
++                                    <div className="item-color-opt">1 컬러</div>
++                                </div>
++                                <div className="product-price">
++                                    <p className="product-display-price">31,900원</p>
++                                </div>
++                            </div>
++                        </div>
++                    </li>
++                    <li className="item-list">
++                        <div className="product-item">
++                            <div className="product-img">
++                                <a href="">
++                                    <img src="../images/a2b8a2c3-88b1-4403-9830-8e17005ebe16_primary.jpg" alt=""/>
++                                </a>
++                            </div>
++                        </div>
++                        <div className="product-info">
++                            <div className="product-display">
++                                <div className="product-info-area">
++                                    <p className="product-display-name">나이키 요가</p>
++                                    <div className="product-subtitle">주니어 쇼츠</div>
++                                    <div className="item-color-opt">1 컬러</div>
++                                </div>
++                                <div className="product-price">
++                                    <p className="product-display-price">31,900원</p>
++                                </div>
++                            </div>
++                        </div>
++                    </li>
++                    <li className="item-list">
++                        <div className="product-item">
++                            <div className="product-img">
++                                <a href="">
++                                    <img src="../images/a2b8a2c3-88b1-4403-9830-8e17005ebe16_primary.jpg" alt=""/>
++                                </a>
++                            </div>
++                        </div>
++                        <div className="product-info">
++                            <div className="product-display">
++                                <div className="product-info-area">
++                                    <p className="product-display-name">나이키 요가</p>
++                                    <div className="product-subtitle">주니어 쇼츠</div>
++                                    <div className="item-color-opt">1 컬러</div>
++                                </div>
++                                <div className="product-price">
++                                    <p className="product-display-price">31,900원</p>
++                                </div>
++                            </div>
++                        </div>
++                    </li>
++                </ul>
++            </div>
++        </div>
++    </>
++);
++}

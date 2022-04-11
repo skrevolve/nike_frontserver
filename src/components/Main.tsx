@@ -28,7 +28,7 @@ return (
                         <div className="product-item">
                             <div className="product-img">
                                 <a href="">
-                                    <img src="../images/a2b8a2c3-88b1-4403-9830-8e17005ebe16_primary.jpg" alt=""/>
+                                    <img src={require("../images/a2b8a2c3-88b1-4403-9830-8e17005ebe16_primary.jpg")} alt=""/>
                                 </a>
                             </div>
                         </div>
@@ -49,7 +49,7 @@ return (
                         <div className="product-item">
                             <div className="product-img">
                                 <a href="">
-                                    <img src="../images/a2b8a2c3-88b1-4403-9830-8e17005ebe16_primary.jpg" alt=""/>
+                                    <img src={require("../images/a2b8a2c3-88b1-4403-9830-8e17005ebe16_primary.jpg")} alt=""/>
                                 </a>
                             </div>
                         </div>
@@ -70,7 +70,7 @@ return (
                         <div className="product-item">
                             <div className="product-img">
                                 <a href="">
-                                    <img src="../images/a2b8a2c3-88b1-4403-9830-8e17005ebe16_primary.jpg" alt=""/>
+                                    <img src={require("../images/a2b8a2c3-88b1-4403-9830-8e17005ebe16_primary.jpg")} alt=""/>
                                 </a>
                             </div>
                         </div>
@@ -91,7 +91,7 @@ return (
                         <div className="product-item">
                             <div className="product-img">
                                 <a href="">
-                                    <img src="../images/a2b8a2c3-88b1-4403-9830-8e17005ebe16_primary.jpg" alt=""/>
+                                    <img src={require("../images/a2b8a2c3-88b1-4403-9830-8e17005ebe16_primary.jpg")} alt=""/>
                                 </a>
                             </div>
                         </div>
@@ -112,7 +112,7 @@ return (
                         <div className="product-item">
                             <div className="product-img">
                                 <a href="">
-                                    <img src="../images/a2b8a2c3-88b1-4403-9830-8e17005ebe16_primary.jpg" alt=""/>
+                                    <img src={require("../images/a2b8a2c3-88b1-4403-9830-8e17005ebe16_primary.jpg")} alt=""/>
                                 </a>
                             </div>
                         </div>
@@ -133,7 +133,7 @@ return (
                         <div className="product-item">
                             <div className="product-img">
                                 <a href="">
-                                    <img src="../images/a2b8a2c3-88b1-4403-9830-8e17005ebe16_primary.jpg" alt=""/>
+                                    <img src={require("../images/a2b8a2c3-88b1-4403-9830-8e17005ebe16_primary.jpg")} alt=""/>
                                 </a>
                             </div>
                         </div>
@@ -154,91 +154,7 @@ return (
                         <div className="product-item">
                             <div className="product-img">
                                 <a href="">
-                                    <img src="../images/a2b8a2c3-88b1-4403-9830-8e17005ebe16_primary.jpg" alt=""/>
-                                </a>
-                            </div>
-                        </div>
-                        <div className="product-info">
-                            <div className="product-display">
-                                <div className="product-info-area">
-                                    <p className="product-display-name">나이키 요가</p>
-                                    <div className="product-subtitle">주니어 쇼츠</div>
-                                    <div className="item-color-opt">1 컬러</div>
-                                </div>
-                                <div className="product-price">
-                                    <p className="product-display-price">31,900원</p>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li className="item-list">
-                        <div className="product-item">
-                            <div className="product-img">
-                                <a href="">
-                                    <img src="../images/a2b8a2c3-88b1-4403-9830-8e17005ebe16_primary.jpg" alt=""/>
-                                </a>
-                            </div>
-                        </div>
-                        <div className="product-info">
-                            <div className="product-display">
-                                <div className="product-info-area">
-                                    <p className="product-display-name">나이키 요가</p>
-                                    <div className="product-subtitle">주니어 쇼츠</div>
-                                    <div className="item-color-opt">1 컬러</div>
-                                </div>
-                                <div className="product-price">
-                                    <p className="product-display-price">31,900원</p>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li className="item-list">
-                        <div className="product-item">
-                            <div className="product-img">
-                                <a href="">
-                                    <img src="../images/a2b8a2c3-88b1-4403-9830-8e17005ebe16_primary.jpg" alt=""/>
-                                </a>
-                            </div>
-                        </div>
-                        <div className="product-info">
-                            <div className="product-display">
-                                <div className="product-info-area">
-                                    <p className="product-display-name">나이키 요가</p>
-                                    <div className="product-subtitle">주니어 쇼츠</div>
-                                    <div className="item-color-opt">1 컬러</div>
-                                </div>
-                                <div className="product-price">
-                                    <p className="product-display-price">31,900원</p>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li className="item-list">
-                        <div className="product-item">
-                            <div className="product-img">
-                                <a href="">
-                                    <img src="../images/a2b8a2c3-88b1-4403-9830-8e17005ebe16_primary.jpg" alt=""/>
-                                </a>
-                            </div>
-                        </div>
-                        <div className="product-info">
-                            <div className="product-display">
-                                <div className="product-info-area">
-                                    <p className="product-display-name">나이키 요가</p>
-                                    <div className="product-subtitle">주니어 쇼츠</div>
-                                    <div className="item-color-opt">1 컬러</div>
-                                </div>
-                                <div className="product-price">
-                                    <p className="product-display-price">31,900원</p>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li className="item-list">
-                        <div className="product-item">
-                            <div className="product-img">
-                                <a href="">
-                                    <img src="../images/a2b8a2c3-88b1-4403-9830-8e17005ebe16_primary.jpg" alt=""/>
+                                    <img src={require("../images/a2b8a2c3-88b1-4403-9830-8e17005ebe16_primary.jpg")} alt=""/>
                                 </a>
                             </div>
                         </div>
