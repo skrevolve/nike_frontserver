@@ -1,7 +1,7 @@
 import React from "react";
 import { Routes,Route } from 'react-router-dom';
 import "./App.css";
-import Sidebar from "./components/Sidebar";
+import NR_page from "./pages/NR_page";
 import Login from "./components/Login";
 import Notice from "./components/Notice";
 
@@ -12,7 +12,7 @@ function App() {
       <Routes>
         <Route path="/Login" element={<Login/>} />
         <Route path="/Notice" element={<Notice/>} />
-        <Route path="/Sidebar" element={<Sidebar/>} />
+        <Route path="/NR_page" element={<NR_page/>} />
       </Routes>
     </div>
   );
