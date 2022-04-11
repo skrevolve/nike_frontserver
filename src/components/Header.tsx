@@ -47,7 +47,7 @@ export default function Header() {
         <div className="gnb">
           <ul>
             <li>
-              <Link to="/Sidebar">New Releases</Link>
+              <Link to="/NR_page">New Releases</Link>
             </li>
             <li>
             <Link to="/Sidebar">Men</Link>
