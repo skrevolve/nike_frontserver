@@ -39,7 +39,7 @@
 
 .left-side {
     width: 280px;
-    /*float: left;*/
+    float: left;
 }
 .left-side .left-side-inner {
     padding: 30px 48px 0 48px;
