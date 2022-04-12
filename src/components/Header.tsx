@@ -1,7 +1,7 @@
 import React from "react";
 import "../css/default.css";
 import "../css/Header.css";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 export default function Header() {
   return (
@@ -11,11 +11,19 @@ export default function Header() {
           <ul className="nk-brand-item">
             <li>
               <a href="#">
-                <img src="http://localhost:8080/images/shoe.jpg" alt="" />
+                <img
+                  src={require("../images/logo_jordan.png")}
+                  alt="조던 홈페이지 이동"
+                />
               </a>
             </li>
             <li>
-              <a href="#">컨버스</a>
+              <a href="#">
+                <img
+                  src={require("../images/logo_converse.png")}
+                  alt="컨버스 홈페이지 이동"
+                />
+              </a>
             </li>
           </ul>
         </div>
@@ -43,23 +51,30 @@ export default function Header() {
       </div>
       {/* //header-top */}
       <div className="header">
-        <h1 className="logo"><Link to="/">로고</Link></h1>
+        <h1 className="logo">
+          <Link to="/">
+            <img
+              src={require("../images/logo_nike.png")}
+              alt="나이키 메인 홈페이지 이동"
+            />
+          </Link>
+        </h1>
         <div className="gnb">
           <ul>
             <li>
               <Link to="/NR_page">New Releases</Link>
             </li>
             <li>
-            <Link to="/Sidebar">Men</Link>
+              <Link to="/Sidebar">Men</Link>
             </li>
             <li>
-            <Link to="/Sidebar">Women</Link>
+              <Link to="/Sidebar">Women</Link>
             </li>
             <li>
-            <Link to="/Sidebar">Kids</Link>
+              <Link to="/Sidebar">Kids</Link>
             </li>
             <li>
-            <Link to="/Sidebar">Sale</Link>
+              <Link to="/Sidebar">Sale</Link>
             </li>
           </ul>
         </div>
