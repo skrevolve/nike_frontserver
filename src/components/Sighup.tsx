@@ -39,42 +39,27 @@ return (
                             <form method="POST" className="regi-form">
                                 <div className="form-row">
                                     <div className="text-field">
-                                        <label>
-                                            사용하실 ID를 입력해주세요. (수신 가능 E-mail)
-                                        </label>
-                                        <input type="email"></input>
+                                        <input type="email" placeholder="사용하실 ID를 입력해주세요. (수신 가능 E-mail)"></input>
                                     </div>
                                 </div>
                                 <div className="form-row">
                                     <div className="text-field">
-                                        <label>
-                                            영문 대 소문+숫자+특수문자 8~16자리(괄호(), 사용 불가)
-                                        </label>
-                                        <input type="password"></input>
+                                        <input type="password" placeholder="영문 대 소문+숫자+특수문자 8~16자리(괄호(), 사용 불가)"></input>
                                     </div>
                                 </div>
                                 <div className="form-row">
                                     <div className="text-field">
-                                        <label>
-                                            패스워드를 다시 입력해 주세요.
-                                        </label>
-                                        <input type="password"></input>
+                                        <input type="password" placeholder="패스워드를 다시 입력해 주세요."></input>
                                     </div>
                                 </div>
                                 <div className="form-row">
                                     <div className="text-field">
-                                        <label>
-                                            이름을 입력해 주세요.
-                                        </label>
-                                        <input type="text"></input>
+                                        <input type="text" placeholder="이름을 입력해 주세요."></input>
                                     </div>
                                 </div>
                                 <div className="form-row">
                                     <div className="text-field">
-                                        <label>
-                                            휴대폰 번호 '-'표 없이 입력해 주세요.
-                                        </label>
-                                        <input type="number"></input>
+                                        <input type="number" placeholder="휴대폰 번호 '-'표 없이 입력해 주세요."></input>
                                     </div>
                                 </div>
                                 {/* 이용약관 */}
