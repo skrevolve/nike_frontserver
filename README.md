@@ -24,15 +24,15 @@ master push를 하는순간 github action이 작동됩니다.
 ## Only use Github Action
 ![2](https://user-images.githubusercontent.com/41939976/163118263-a830ec54-5cb0-49ce-a4f8-65310c4982e6.png)
 
-# RESTful API SERVER (springboot)
+# RESTful API SERVER (springboot JPA ::8080)
 http://skrevolve.org:8080/test-docker
 
-# FRONT SERVER (nginx)
+# FRONT SERVER (nginx ::3000)
 http://skrevolve.org
 
-# DB (mariadb)
-3.35.234.53:3306/nike_db
+# DB (mariadb ::3306)
+Database : nike_db
 
 # Docker-hub repository
-https://hub.docker.com/r/sukyu0919/nike_frontserver
+https://hub.docker.com/r/sukyu0919/nike_frontserver  
 API 서버는 private으로 등록되어있습니다
