@@ -15,6 +15,11 @@
 # 운영 환경
 Ubuntu 20.04 LTS (AWS EC2)
 서버에서 Docker 이미지를 빌드하여 Docker-hub 계정의 레포지토리에 push 자동화 (By Github action)
+Jenkin를 통한 CI/CD 전략을 사용하려 했으나 Github Action으로만 구축
+## Jenkins + Github Action
+![1](https://user-images.githubusercontent.com/41939976/163118254-4925f26a-89d7-43db-8a1d-ede7d0afbec3.png)
+## Only use Github Action
+![2](https://user-images.githubusercontent.com/41939976/163118263-a830ec54-5cb0-49ce-a4f8-65310c4982e6.png)
 
 # RESTful API SERVER (springboot)
 http://skrevolve.org:8080/test-docker
