@@ -14,8 +14,11 @@
 
 # 운영 환경
 Ubuntu 20.04 LTS (AWS EC2)
-서버에서 Docker 이미지를 빌드하여 Docker-hub 계정의 레포지토리에 push 자동화 (By Github action)
-Jenkin를 통한 CI/CD 전략을 사용하려 했으나 Github Action으로만 구축
+서버에서 Docker 이미지를 빌드하여 Docker-hub 계정의 레포지토리에 push 자동화 (By Github action)  
+Docker hub를 통해 빌드한 이미지를 공유하거나 private으로 관리하면서 서버자체에서 github action을 통해 컨테이너 자동 배포화가 되어있습니다  
+Jenkin를 통한 CI/CD 전략을 사용하려 했으나 Github Action으로만 구축 (conatiner로 올리게되면 CPU사용률이 급증하는 이슈가 있어서..)  
+master push를 하는순간 github action이 작동됩니다.
+
 ## Jenkins + Github Action
 ![1](https://user-images.githubusercontent.com/41939976/163118254-4925f26a-89d7-43db-8a1d-ede7d0afbec3.png)
 ## Only use Github Action
@@ -29,3 +32,7 @@ http://skrevolve.org
 
 # DB (mariadb)
 3.35.234.53:3306/nike_db
+
+# Docker-hub repository
+https://hub.docker.com/r/sukyu0919/nike_frontserver
+API 서버는 private으로 등록되어있습니다
