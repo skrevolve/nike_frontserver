@@ -68,7 +68,7 @@ return (
                                         <div className="agree">
                                             <div className="agree-grid">
                                                 <h6 className="agree-grid-tit">이용약관</h6>
-                                                <a target="#" href="#" className="agree-grid-blank">전문보기</a>
+                                                <a target="_blank" href="https://www.nike.com/kr/ko_kr/cscenter/policy" className="agree-grid-blank">전문보기</a>
                                             </div>
                                             <div className="agree-grid-scroll">
                                                 <div className="scroll-box">
