@@ -1,7 +1,7 @@
 /*button 공통*/
 .login_form .buttons button{width: 100%; height: 50px; padding: 13px 30px; border: none; font-size: 14px;}
 
-.modal {font-size: 14px; position: fixed; top: 0; right: 0; left: 0; bottom:0; padding: 20px; background: rgba(0, 0, 0, 0.6); display: none;}
+.login {font-size: 14px; position: fixed; top: 0; right: 0; left: 0; bottom:0; padding: 20px; background: rgba(0, 0, 0, 0.6);}
 .login_form {width: 480px; height: 620px; position: relative; padding: 20px; margin: 50px auto; background: #fff; }
 .login_contents h2 { padding: 110px 0 40px; font-size: 24px; font-weight: bold;}
 .login_contents .btn_close {position: absolute; top: 20px; right: 25px; font-size: 20px; background: none;}
