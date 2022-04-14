@@ -1,61 +1,72 @@
 import React from 'react';
 import '../css/default.css';
 import '../css/Login.css';
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import { faSmile } from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom';
+import { useState } from 'react';
 
+export default function Login(props: any) {
+    // const Login = (props) => {
 
-export default function Login() {
+    const { open, close, Header } = props;
+
     return (
-        <div className='login'>
-            <div className='login_form'>
-                <div className='login_contents'>
-                    {/* <button type="button" className='btn_close'>X</button> */}
-                    <div className='btn_close'>X</div>
-                    <h2>나이키 로그인</h2>
-                    <form action="" name="login" method=''>
-                        <div>
-                            <div className='user_id_box login_input'>
-                                <input type="text" name="user_id" placeholder='아이디' />
+        // 모달이 열릴때 openModal 클래스가 생성된다.
+        // open이 true면 openModal
+        <div className={open ? 'openModal modal' : 'modal'} >
+            {open ? (
+                <div className='login_form'>
+                    <div className='login_contents'>
+                        <button type="button" className='btn_close' onClick={close}>X</button>
+
+                        <h2>나이키 로그인</h2>
+                        <form action="" name="login" method=''>
+                            <div>
+                                <div className='user_id_box login_input'>
+                                    <input type="text" name="user_id" placeholder='아이디' />
+                                </div>
+                                <div className='user_pw_box login_input'>
+                                    <input type="password" name="user_pw" placeholder='비밀번호' />
+                                </div>
                             </div>
-                            <div className='user_pw_box login_input'>
-                                <input type="password" name="user_pw" placeholder='비밀번호' />
+
+                            <div className='login_checkbox clear'>
+                                <span>
+                                    <input type="checkbox" name="check" id="check" />
+                                    <label htmlFor="check"><span>로그인유지하기</span></label>
+                                </span>
+                                <span className='login_find'><Link to="#">아이디/비밀번호 찾기</Link></span>
                             </div>
-                        </div>
 
-                        <div className='login_checkbox clear'>
-                            <span>
-                                <input type="checkbox" name="check" id="check" />
-                                <label htmlFor="check"><span>로그인유지하기</span></label>
-                            </span>
-                            <span className='login_find'><a href="">아이디/비밀번호 찾기</a></span>
-                        </div>
-
-                        <div className='btn_login buttons'>
-                            <button type='submit'>로그인</button>
-                        </div>
-
-                        <div className='social_containner'>
-                            <div className='btn_kakao buttons'>
-                                <button type='button'>카카오계정 로그인</button>
+                            <div className='btn_login buttons'>
+                                <button type='submit'>로그인</button>
                             </div>
-                            <div className='btn_facebook buttons'>
-                                <button type='button'>페이스북으로 로그인</button>
+
+                            <div className='social_containner'>
+                                <div className='btn_kakao buttons'>
+                                    <button type='button'>카카오계정 로그인</button>
+                                </div>
+                                <div className='btn_facebook buttons'>
+                                    <button type='button'>페이스북으로 로그인</button>
+                                </div>
                             </div>
-                        </div>
 
-                        <div>
-                            <span>회원이 아니신가요?</span>
-                            <span><a href="">회원가입</a></span>
-                        </div>
+                            <div className='join_text'>
+                                <span>회원이 아니신가요?</span>
+                                <span><Link to="#">회원가입</Link></span>
+                            </div>
 
-                        <div>
-                            <span>비회원 주문 조회</span>
-                        </div>
-                    </form>
+                            <div>
+                                <span><Link to="#">비회원 주문 조회</Link></span>
+                            </div>
+                        </form>
+                    </div>
                 </div>
-            </div>
+                //false면 안보여야 되니까 null
+            ) : null}
         </div>
     )
 }
+
+
+
 
