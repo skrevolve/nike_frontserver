@@ -1,11 +1,11 @@
 import React from "react";
 import "../css/default.css";
-import "../css/Sighup.css";
+import "../css/Signup.css";
 
-export default function Sighup() {
+export default function Signup() {
 return (
     <>
-        <div className="Sighup-wrap">
+        <div className="Signup-wrap">
             <div className="width-wrap">
                 <div className="header-area">
                     <h2 className="s-title">나이키 멤버 가입</h2>
@@ -117,7 +117,7 @@ return (
                             </div>
                         </div>
                         <div className="form-btn">
-                            <button className="sighup-btn">
+                            <button className="Signup-btn">
                                 회원가입하기 (만 14세 이상)
                             </button>
                         </div>
