@@ -12,8 +12,9 @@ ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
       <Header />
-      <Main />
-      <App />
+        <main>
+            <App />
+        </main>
       <Footer />
     </BrowserRouter>
   </React.StrictMode>,
