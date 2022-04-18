@@ -6,6 +6,9 @@ import "../css/default.css";
 import "../css/Header.css";
 import Login from "./Login";
 import { Link } from "react-router-dom";
+import { RiSearchLine } from "react-icons/ri";
+import { RiHeartLine } from "react-icons/ri";
+import { RiShoppingCartLine } from "react-icons/ri";
 
 class Header extends Component {
   constructor(props) {
@@ -22,6 +25,10 @@ class Header extends Component {
       });
 
       $(".gnb > ul > li").mouseleave(function () {
+        $(this).find(".sub_menu_wrap").css("display", "none");
+      });
+
+      $(".gnb > ul > li").click(function () {
         $(this).find(".sub_menu_wrap").css("display", "none");
       });
     });
@@ -650,14 +657,23 @@ class Header extends Component {
               </li>
             </ul>
           </div>
-          <div className="menu-opt">
-            <div className="search_wrap">
+          <div className="menu_opt">
+            <div className="srch_wrap">
               <input type="search" />
-              <button>검색</button>
+              <button className="btn_srch">
+                <span className="blind">검색</span>
+                <RiSearchLine size="22" />
+              </button>
             </div>
-            <div>
-              <button>찜목록</button>
-              <button>장바구니</button>
+            <div className="btn_customer">
+              <button>
+                <span className="blind">찜목록</span>
+                <RiHeartLine size="24" />
+              </button>
+              <button>
+                <span className="blind">장바구니</span>
+                <RiShoppingCartLine size="24" />
+              </button>
             </div>
           </div>
         </div>
