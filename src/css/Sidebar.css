@@ -1,0 +1,85 @@
+
+
+.top-side {
+    padding: 40px 48px 30px 48px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.top-side .title-section .tit-txt {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+.top-side .filter-section {
+    display: flex;
+}
+.top-side .filter-section .filter-btn {
+    background-color: #fff;
+    border: none;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.top-side .filter-section .filter-btn:hover {
+    color: #777;
+}
+.top-side .filter-section .select-btn {
+    margin-left: 30px;
+    padding-top: 4.3px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.top-side .filter-section .select-btn:hover {
+    color: #777;
+}
+
+
+
+.left-side {
+    width: 280px;
+    float: left;
+}
+.left-side .left-side-inner {
+    padding: 30px 48px 0 48px;
+    margin: 0;
+}
+.left-side .left-side-inner .inner-section {
+    border-top: 1px solid #e5e5e5;
+    padding-top: 21px;
+}
+.left-side .left-side-inner .inner-section .section-tit {
+    text-align: left;
+    padding-bottom: 22px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #111;
+    cursor: pointer;
+}
+.left-side .left-side-inner .inner-section .section-wrap {
+    height: auto;
+}
+.left-side .left-side-inner .inner-section .section-wrap .s-item-wrap {
+    padding-bottom: 30px;
+}
+.left-side .left-side-inner .inner-section .section-wrap .s-item-wrap .s-item .input-checkbox {
+    padding: 4px 0;
+    display: flex;
+    align-items: center;
+}
+.left-side .left-side-inner .inner-section .section-wrap .s-item-wrap .s-item .input-checkbox input {
+    width: 20px;
+    height: 20px;
+    margin-left: 0;
+    margin-right: 6px;
+    cursor: pointer;
+}
+.left-side .left-side-inner .inner-section .section-wrap .s-item-wrap .s-item .input-checkbox span {
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.left-side .left-side-inner .inner-section .section-wrap .s-item-wrap .s-item .input-checkbox span:hover {
+    color: #777;
+}

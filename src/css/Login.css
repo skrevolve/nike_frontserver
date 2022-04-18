@@ -1,0 +1,22 @@
+/*button 공통*/
+.login_form .buttons button{width: 100%; height: 50px; padding: 13px 30px; border: none; font-size: 14px;}
+
+.login {font-size: 14px; position: fixed; top: 0; right: 0; left: 0; bottom:0; padding: 20px; background: rgba(0, 0, 0, 0.8); z-index: 1000;}
+.login_form {width: 480px; height: 620px; position: relative; padding: 20px; margin: 50px auto; background: #fff; }
+.login_contents h2 { padding: 110px 0 40px; font-size: 24px; font-weight: bold; text-align: center;}
+.btn_close {position: absolute; top: 10px; right: 0; font-size: 20px; background: none;}
+
+.login_input > input {width: 445px; height: 40px; padding: 9px 12px; border:1px solid #e5e5e5; color: #999; font-weight: bold;} 
+.user_id_box {margin-bottom: 20px;}
+
+.login_checkbox {margin-top: 10px;}
+.login_checkbox > span {float: left;}
+.login_checkbox .login_find {float: right;}
+
+.btn_login button {background: #000;  color: #fff; margin: 20px 0; cursor: pointer;}
+.btn_kakao { margin-bottom: 10px;}
+.btn_kakao button {background: #feec34;}
+.btn_facebook {margin-bottom: 15px;}
+.btn_facebook button {background: #21538a; color: #fff;}
+.join_text, .noMemberOrder {text-align: center; line-height: 30px;}
+.join_text a, .noMemberOrder a, .login_find a{font-size: 14px !important;}
