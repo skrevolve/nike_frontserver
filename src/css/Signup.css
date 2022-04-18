@@ -1,8 +1,8 @@
 
-
 .Signup-wrap {
     margin-top: 70px;
 }
+
 .Signup-wrap .width-wrap {
     max-width: 420px;
     margin: 0 auto;
@@ -11,11 +11,13 @@
     padding: 0 20px 32px;
     box-sizing: border-box;
 }
+
 .Signup-wrap .width-wrap .header-area {
     margin-bottom: 40px;
     text-align: center;
     letter-spacing: -1px;
 }
+
 .Signup-wrap .width-wrap .header-area .s-title {
     margin-top: 15px;
     margin-bottom: 15px;
@@ -24,6 +26,7 @@
     color: #111;
     font-weight: 700;
 }
+
 .Signup-wrap .width-wrap .header-area .s-description {
     text-align: center;
     line-height: 20px;
@@ -34,15 +37,18 @@
 .Signup-wrap .width-wrap .body-area .social-body {
     margin-bottom: 35px;
 }
+
 .Signup-wrap .width-wrap .body-area .social-body .social-grid {
     display: flex;
     flex-wrap: wrap;
     margin: 0;
     padding: 0;
 }
+
 .Signup-wrap .width-wrap .body-area .social-body .social-grid .width-1 {
     width: 100%;
 }
+
 .Signup-wrap .width-wrap .body-area .social-body .social-grid .width-1 .btn-social {
     margin-bottom: 10px;
     border-radius: 3px;
@@ -50,14 +56,17 @@
     height: 40px;
     display: block;
 }
+
 .Signup-wrap .width-wrap .body-area .social-body .social-grid .width-1 .btn-social.btn-kakao {
     background-color: #feec34;
     border-color: #feec34;
 }
+
 .Signup-wrap .width-wrap .body-area .social-body .social-grid .width-1 .btn-social.btn-facebook {
     background-color: #21538a;
     border-color: #21538a;
 }
+
 .Signup-wrap .width-wrap .body-area .social-body .social-grid .width-1 .btn-social .social-txt {
     color: #111;
     width: 100%;
@@ -68,22 +77,27 @@
     display: inline-block;
     font-weight: bold;
 }
+
 .Signup-wrap .width-wrap .body-area .social-body .social-grid .width-1 .btn-social .social-txt.facebook-txt {
     color: #fff;
 }
+
 .Signup-wrap .width-wrap .body-area .social-body .social-grid .width-1 .btn-social .social-txt .icons {
     position: relative;
     top: 5px;
     left: -75px;
 }
+
 .Signup-wrap .width-wrap .body-area .social-body .social-grid .width-1 .btn-social .social-txt .icons.kakao-icon {
     left: -80px;
 }
+
 .Signup-wrap .width-wrap .body-area .line-width {
     border-bottom: 1px solid #ccc;
     position: relative;
     margin-bottom: 35px;
 }
+
 .Signup-wrap .width-wrap .body-area .line-width .line-width-txt {
     position: absolute;
     background-color: #fff;
@@ -95,6 +109,7 @@
     text-align: center;
     color: #606060;
 }
+
 .Signup-wrap .width-wrap .body-area .form-top {
     display: flex;
     flex-wrap: wrap;
@@ -102,11 +117,13 @@
     margin: 0;
     padding: 0;
 }
+
 .Signup-wrap .width-wrap .body-area .form-top .text-field {
     width: 100%;
     display: inline-block;
     position: relative;
 }
+
 .Signup-wrap .width-wrap .body-area .form-top .text-field label {
     position: absolute;
     top: 13px;
@@ -115,9 +132,11 @@
     color: #999;
     cursor: inherit;
 }
+
 .Signup-wrap .width-wrap .body-area .form-top .form-row + .form-row {
     margin-top: 15px;
 }
+
 .Signup-wrap .width-wrap .body-area .form-top .form-row .text-field input {
     width: 100%;
     height: 40px;
@@ -126,16 +145,19 @@
     outline: none;
     box-sizing: border-box;
 }
+
 /* 이용약관 */
 .Signup-wrap .width-wrap .body-area .form-top .form-row .regi-terms {
     clear: both;
 }
+
 .Signup-wrap .width-wrap .body-area .form-top .form-row .regi-terms .agree .agree-grid {
     display: flex;
     flex-wrap: wrap;
     margin: 0;
     padding: 0;
 }
+
 .Signup-wrap .width-wrap .body-area .form-top .form-row .regi-terms .agree .agree-grid .agree-grid-tit {
     font-size: 11px;
     margin-top: 30px;
@@ -145,12 +167,14 @@
     text-align: left;
     width: 50%;
 }
+
 .Signup-wrap .width-wrap .body-area .form-top .form-row .regi-terms .agree .agree-grid .agree-grid-blank {
     font-size: 11px;
     margin-top: 30px;
     text-align: right;
     width: 50%;
 }
+
 .Signup-wrap .width-wrap .body-area .form-top .form-row .regi-terms .agree .agree-grid-scroll .scroll-box {
     font-size: 10px;
     line-height: 2;
@@ -160,16 +184,19 @@
     border: 1px solid #d1d1d1;
     text-align: left;
 }
-b { 
+
+b {
     font-weight: bold;
-    
+
 }
+
 .Signup-wrap .width-wrap .body-area .form-top .form-row .regi-terms .agree .agree-check {
     padding-top: 7px;
     font-size: 13px;
     line-height: 1;
     text-align: left;
 }
+
 .Signup-wrap .width-wrap .body-area .form-top .form-row .regi-terms .agree .agree-check label {
     display: flex;
     align-items: center;
@@ -183,6 +210,7 @@ b {
     margin: 0;
     padding: 0;
 }
+
 .Signup-wrap .width-wrap .body-area .form-bottom .agree-info-txt {
     padding-top: 7px;
     font-size: 11px;
@@ -191,15 +219,18 @@ b {
     width: 100%;
     text-align: left;
 }
+
 .Signup-wrap .width-wrap .body-area .form-bottom .agree-info-txt.center {
     padding: 20px 0;
     text-align: center;
     font-size: 14px;
     line-height: 1.5;
 }
+
 .Signup-wrap .width-wrap .body-area .form-btn {
     margin-bottom: 30px;
 }
+
 .Signup-wrap .width-wrap .body-area .form-btn .Signup-btn {
     height: 48px;
     font-size: 15px;
@@ -211,6 +242,7 @@ b {
     border: none;
     cursor: pointer;
 }
+
 .Signup-wrap .width-wrap .body-area .form-btn .Signup-btn:hover {
     background-color: #333;
 }

@@ -3,20 +3,21 @@ import '../css/default.css';
 import '../css/Footer.css';
 import Modal from './Modal';
 // import { Link } from "react-router-dom";
-import { useState } from 'react';
+import {useState} from 'react';
 
 export default function Footer() {
 
     const [modal, setModal] = useState(false);
 
-    const openModal = () => {
+    const openModal = (e) => {
+        e.preventDefault();
         setModal(true);
     };
 
     const closeModal = () => {
         setModal(false);
     }
-    
+
     return (
         <div className="footer">
             <footer>
@@ -95,9 +96,9 @@ export default function Footer() {
                         <div className="footer_insurance">
                             <p>안전거래를 위해 현금 등으로 결제 시 저희 쇼핑몰에서 가입한</p>
                             <p>KG 이니시스의 구매안전 서비스 (채무지급보증)를 이용하실 수 있습니다.</p>
-                            <p className="footer_insurance_info">온라인디지털콘텐츠사업발전법에 의한 
-                            <a href="#" onClick={openModal} >콘텐츠보호안내 자세히보기</a>
-                            <Modal open={modal === true} close={closeModal}/>
+                            <p className="footer_insurance_info">온라인디지털콘텐츠사업발전법에 의한
+                                <a href="" onClick={openModal}>콘텐츠보호안내 자세히보기</a>
+                                <Modal open={modal === true} close={closeModal}/>
                             </p>
                         </div>
                     </div>

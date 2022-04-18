@@ -1,7 +1,43 @@
-.noticeWrap {width: 100%;}
-.noticeCon {width: 800px; margin: 0 auto; height: 960px;  padding: 45px 50px 50px; border:1px solid #ccc;}
-#search {height: 40px; padding: 0 80px 0 30px; border: 1px solid #ddd; border-radius: 30px; }
-.title {font-size: 24px; padding:50px 0 20px; border-bottom: 1px solid #000; text-align: left;}
-#notice_board {width: 100%; margin-top: 20px; }
-#notice_board th, #notice_board td{border: 1px solid #ccc; padding: 10px;}
-button[type="button"] {border: none;  padding: 10px; margin: 0 5px; border-radius: 10px; cursor: pointer;}
+.noticeWrap {
+    width: 100%;
+}
+
+.noticeCon {
+    width: 800px;
+    margin: 0 auto;
+    height: 960px;
+    padding: 45px 50px 50px;
+    border: 1px solid #ccc;
+}
+
+#search {
+    height: 40px;
+    padding: 0 80px 0 30px;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+}
+
+.title {
+    font-size: 24px;
+    padding: 50px 0 20px;
+    border-bottom: 1px solid #000;
+    text-align: left;
+}
+
+#notice_board {
+    width: 100%;
+    margin-top: 20px;
+}
+
+#notice_board th, #notice_board td {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+button[type="button"] {
+    border: none;
+    padding: 10px;
+    margin: 0 5px;
+    border-radius: 10px;
+    cursor: pointer;
+}
