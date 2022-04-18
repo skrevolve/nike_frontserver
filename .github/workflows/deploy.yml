@@ -16,7 +16,7 @@ jobs:
     - name: Build & push Docker image
       uses: mr-smithers-excellent/docker-build-push@v5
       with:
-        image: sukyu0919/nike_apiserver
+        image: sukyu0919/nike_frontserver
         tags: latest
         registry: docker.io
         dockerfile: Dockerfile
