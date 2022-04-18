@@ -61,14 +61,23 @@
 .Signup-wrap .width-wrap .body-area .social-body .social-grid .width-1 .btn-social .social-txt {
     color: #111;
     width: 100%;
-    padding-top: 13px;
-    padding-left: 10px;
-    font-size: 15px;
+    padding-top: 2px;
+    padding-left: 0px;
+    font-size: 14px;
     text-align: center;
     display: inline-block;
+    font-weight: bold;
 }
 .Signup-wrap .width-wrap .body-area .social-body .social-grid .width-1 .btn-social .social-txt.facebook-txt {
     color: #fff;
+}
+.Signup-wrap .width-wrap .body-area .social-body .social-grid .width-1 .btn-social .social-txt .icons {
+    position: relative;
+    top: 5px;
+    left: -75px;
+}
+.Signup-wrap .width-wrap .body-area .social-body .social-grid .width-1 .btn-social .social-txt .icons.kakao-icon {
+    left: -80px;
 }
 .Signup-wrap .width-wrap .body-area .line-width {
     border-bottom: 1px solid #ccc;
