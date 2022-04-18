@@ -36,11 +36,23 @@ ol, ul {
 
 blockquote, q {
   quotes: none;
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
 }
 
 blockquote:before, blockquote:after,
 q:before, q:after {
-  content: ”;
   content: none;
 }
 
@@ -57,6 +69,22 @@ table {
   width: 1px;
   height: 1px;
   clip: rect(1px, 1px, 1px, 1px);
+  content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.hidden, .blind, hr, caption, legend {
+    display: block;
+    overflow: hidden;
+    position: absolute;
+    border: 0;
+    width: 1px;
+    height: 1px;
+    clip: rect(1px, 1px, 1px, 1px);
 }
 
 /*clip 요소의 특정부분만 보이게 하는 속성*/
