@@ -1,24 +1,38 @@
 //import React from "react";
-import React, { Component } from 'react'
+import React, { Component } from "react";
+import jquery from "jquery";
+import $ from "jquery";
 import "../css/default.css";
 import "../css/Header.css";
-import Login from './Login';
+import Login from "./Login";
 import { Link } from "react-router-dom";
-
 
 class Header extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      login : false
+      login: false,
     };
   }
-  openLogin = () =>{
-    this.setState({login : true});
+
+  componentDidMount() {
+    $(document).ready(function () {
+      $(".gnb > ul > li").mouseenter(function () {
+        $(this).find(".sub_menu_wrap").css("display", "flex");
+      });
+
+      $(".gnb > ul > li").mouseleave(function () {
+        $(this).find(".sub_menu_wrap").css("display", "none");
+      });
+    });
+  }
+
+  openLogin = () => {
+    this.setState({ login: true });
   };
 
-  closeLogin = () =>{
-    this.setState({login : false});
+  closeLogin = () => {
+    this.setState({ login: false });
   };
 
   render() {
@@ -83,23 +97,561 @@ class Header extends Component {
             <ul>
               <li>
                 <Link to="/NrPage">New Releases</Link>
+                <div className="sub_menu_wrap">
+                  <div className="sub_menu">
+                    <ul>
+                      <li>
+                        <a href="">
+                          <strong>New & Featured</strong>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="">신상품 전체보기</a>
+                      </li>
+                      <li>
+                        <a href="">SNKRS</a>
+                      </li>
+                      <li>
+                        <a href="">에어 포스 1</a>
+                      </li>
+                      <li>
+                        <a href="">ACG</a>
+                      </li>
+                      <li>
+                        <a href="">NikeLab</a>
+                      </li>
+                      <li>
+                        <a href="">봄을 위한 스타일링 추천</a>
+                      </li>
+                      <li>
+                        <a href="">지속가능한 컬렉션</a>
+                      </li>
+                      <li>
+                        <a href="">품절임박</a>
+                      </li>
+                      <li>
+                        <a href="">New To Sale</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="sub_menu">
+                    <ul>
+                      <li>
+                        <a href="">
+                          <strong>New For Men</strong>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="">신발</a>
+                      </li>
+                      <li>
+                        <a href="">의류</a>
+                      </li>
+                      <li>
+                        <a href="">용품</a>
+                      </li>
+                      <li>
+                        <a href="">전체보기</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="sub_menu">
+                    <ul>
+                      <li>
+                        <a href="">
+                          <strong>New For Women</strong>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="">신발</a>
+                      </li>
+                      <li>
+                        <a href="">의류</a>
+                      </li>
+                      <li>
+                        <a href="">용품</a>
+                      </li>
+                      <li>
+                        <a href="">전체보기</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="sub_menu">
+                    <ul>
+                      <li>
+                        <a href="">
+                          <strong>New For Kids</strong>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="">신발</a>
+                      </li>
+                      <li>
+                        <a href="">의류</a>
+                      </li>
+                      <li>
+                        <a href="">용품</a>
+                      </li>
+                      <li>
+                        <a href="">전체보기</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
               </li>
               <li>
                 <Link to="/Sidebar">Men</Link>
+                <div className="sub_menu_wrap">
+                  <div className="sub_menu">
+                    <ul>
+                      <li>
+                        <a href="">
+                          <strong>New & Featured</strong>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="">신상품 전체보기</a>
+                      </li>
+                      <li>
+                        <a href="">SNKRS</a>
+                      </li>
+                      <li>
+                        <a href="">에어 포스 1</a>
+                      </li>
+                      <li>
+                        <a href="">ACG</a>
+                      </li>
+                      <li>
+                        <a href="">NikeLab</a>
+                      </li>
+                      <li>
+                        <a href="">봄을 위한 스타일링 추천</a>
+                      </li>
+                      <li>
+                        <a href="">지속가능한 컬렉션</a>
+                      </li>
+                      <li>
+                        <a href="">품절임박</a>
+                      </li>
+                      <li>
+                        <a href="">New To Sale</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="sub_menu">
+                    <ul>
+                      <li>
+                        <a href="">
+                          <strong>신발</strong>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="">신발 전체</a>
+                      </li>
+                      <li>
+                        <a href="">라이프스타일</a>
+                      </li>
+                      <li>
+                        <a href="">러닝</a>
+                      </li>
+                      <li>
+                        <a href="">농구</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="sub_menu">
+                    <ul>
+                      <li>
+                        <a href="">
+                          <strong>의류</strong>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="">의류 전체</a>
+                      </li>
+                      <li>
+                        <a href="">탑 & 티셔츠</a>
+                      </li>
+                      <li>
+                        <a href="">팬츠 & 타이즈</a>
+                      </li>
+                      <li>
+                        <a href="">숏 팬츠</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="sub_menu">
+                    <ul>
+                      <li>
+                        <a href="">
+                          <strong>스포츠</strong>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="">러닝</a>
+                      </li>
+                      <li>
+                        <a href="">농구</a>
+                      </li>
+                      <li>
+                        <a href="">축구</a>
+                      </li>
+                      <li>
+                        <a href="">골프</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="sub_menu">
+                    <ul>
+                      <li>
+                        <a href="">
+                          <strong>브랜드</strong>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="">Nike Sportswear</a>
+                      </li>
+                      <li>
+                        <a href="">NikeLab</a>
+                      </li>
+                      <li>
+                        <a href="">Jordan</a>
+                      </li>
+                      <li>
+                        <a href="">NBA</a>
+                      </li>
+                      <li>
+                        <a href="">ACG</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
               </li>
               <li>
                 <Link to="/Sidebar">Women</Link>
+                <div className="sub_menu_wrap">
+                  <div className="sub_menu">
+                    <ul>
+                      <li>
+                        <a href="">
+                          <strong>New & Featured</strong>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="">신상품 전체보기</a>
+                      </li>
+                      <li>
+                        <a href="">SNKRS</a>
+                      </li>
+                      <li>
+                        <a href="">에어 포스 1</a>
+                      </li>
+                      <li>
+                        <a href="">ACG</a>
+                      </li>
+                      <li>
+                        <a href="">NikeLab</a>
+                      </li>
+                      <li>
+                        <a href="">봄을 위한 스타일링 추천</a>
+                      </li>
+                      <li>
+                        <a href="">지속가능한 컬렉션</a>
+                      </li>
+                      <li>
+                        <a href="">품절임박</a>
+                      </li>
+                      <li>
+                        <a href="">New To Sale</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="sub_menu">
+                    <ul>
+                      <li>
+                        <a href="">
+                          <strong>신발</strong>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="">신발 전체</a>
+                      </li>
+                      <li>
+                        <a href="">라이프스타일</a>
+                      </li>
+                      <li>
+                        <a href="">러닝</a>
+                      </li>
+                      <li>
+                        <a href="">농구</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="sub_menu">
+                    <ul>
+                      <li>
+                        <a href="">
+                          <strong>의류</strong>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="">의류 전체</a>
+                      </li>
+                      <li>
+                        <a href="">탑 & 티셔츠</a>
+                      </li>
+                      <li>
+                        <a href="">팬츠 & 타이즈</a>
+                      </li>
+                      <li>
+                        <a href="">숏 팬츠</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="sub_menu">
+                    <ul>
+                      <li>
+                        <a href="">
+                          <strong>스포츠</strong>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="">러닝</a>
+                      </li>
+                      <li>
+                        <a href="">농구</a>
+                      </li>
+                      <li>
+                        <a href="">축구</a>
+                      </li>
+                      <li>
+                        <a href="">골프</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="sub_menu">
+                    <ul>
+                      <li>
+                        <a href="">
+                          <strong>브랜드</strong>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="">Nike Sportswear</a>
+                      </li>
+                      <li>
+                        <a href="">NikeLab</a>
+                      </li>
+                      <li>
+                        <a href="">Jordan</a>
+                      </li>
+                      <li>
+                        <a href="">NBA</a>
+                      </li>
+                      <li>
+                        <a href="">ACG</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
               </li>
               <li>
                 <Link to="/Sidebar">Kids</Link>
+                <div className="sub_menu_wrap">
+                  <div className="sub_menu">
+                    <ul>
+                      <li>
+                        <a href="">
+                          <strong>New & Featured</strong>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="">신상품 전체보기</a>
+                      </li>
+                      <li>
+                        <a href="">SNKRS</a>
+                      </li>
+                      <li>
+                        <a href="">에어 포스 1</a>
+                      </li>
+                      <li>
+                        <a href="">ACG</a>
+                      </li>
+                      <li>
+                        <a href="">NikeLab</a>
+                      </li>
+                      <li>
+                        <a href="">봄을 위한 스타일링 추천</a>
+                      </li>
+                      <li>
+                        <a href="">지속가능한 컬렉션</a>
+                      </li>
+                      <li>
+                        <a href="">품절임박</a>
+                      </li>
+                      <li>
+                        <a href="">New To Sale</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="sub_menu">
+                    <ul>
+                      <li>
+                        <a href="">
+                          <strong>신발</strong>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="">베이비 (160mm이하)</a>
+                      </li>
+                      <li>
+                        <a href="">리틀키즈 (165-220mm)</a>
+                      </li>
+                      <li>
+                        <a href="">주니어(225-250mm)</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="sub_menu">
+                    <ul>
+                      <li>
+                        <a href="">
+                          <strong>의류</strong>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="">베이비 (0-4세)</a>
+                      </li>
+                      <li>
+                        <a href="">리틀키즈 (4-7세)</a>
+                      </li>
+                      <li>
+                        <a href="">주니어 (8-13세)</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="sub_menu">
+                    <ul>
+                      <li>
+                        <a href="">
+                          <strong>용품</strong>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="">가방</a>
+                      </li>
+                      <li>
+                        <a href="">모자</a>
+                      </li>
+                      <li>
+                        <a href="">양말</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="sub_menu">
+                    <ul>
+                      <li>
+                        <a href="">
+                          <strong>스포츠</strong>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="">러닝</a>
+                      </li>
+                      <li>
+                        <a href="">축구</a>
+                      </li>
+                      <li>
+                        <a href="">농구</a>
+                      </li>
+                      <li>
+                        <a href="">테니스</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
               </li>
               <li>
                 <Link to="/Sidebar">Sale</Link>
+                <div className="sub_menu_wrap">
+                  <div className="sub_menu">
+                    <ul>
+                      <li>
+                        <a href="">
+                          <strong>NEW TO SALE</strong>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="sub_menu">
+                    <ul>
+                      <li>
+                        <a href="">
+                          <strong>Mens Sale</strong>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="">신발</a>
+                      </li>
+                      <li>
+                        <a href="">의류</a>
+                      </li>
+                      <li>
+                        <a href="">용품</a>
+                      </li>
+                      <li>
+                        <a href="">전체보기</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="sub_menu">
+                    <ul>
+                      <li>
+                        <a href="">
+                          <strong>Womens Sale</strong>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="">신발</a>
+                      </li>
+                      <li>
+                        <a href="">의류</a>
+                      </li>
+                      <li>
+                        <a href="">용품</a>
+                      </li>
+                      <li>
+                        <a href="">전체보기</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="sub_menu">
+                    <ul>
+                      <li>
+                        <a href="">
+                          <strong>Kids Sale</strong>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="">신발</a>
+                      </li>
+                      <li>
+                        <a href="">의류</a>
+                      </li>
+                      <li>
+                        <a href="">용품</a>
+                      </li>
+                      <li>
+                        <a href="">전체보기</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
               </li>
             </ul>
           </div>
           <div className="menu-opt">
-            <div>
+            <div className="search_wrap">
               <input type="search" />
               <button>검색</button>
             </div>
