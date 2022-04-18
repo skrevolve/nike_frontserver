@@ -1,3 +1,6 @@
+# test
+test
+
 # 업무규칙
 - git checkout master (master 브런치로 이동한다)
 - git pull origin master
