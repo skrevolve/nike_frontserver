@@ -1,6 +1,8 @@
 import React from "react";
 import "../css/default.css";
 import "../css/Signup.css";
+import { RiKakaoTalkFill } from 'react-icons/ri';
+import { RiFacebookFill } from 'react-icons/ri';
 
 export default function Signup() {
 return (
@@ -20,12 +22,12 @@ return (
                             <div className="social-grid">
                                 <div className="width-1">
                                     <a href="#" className="btn-social btn-kakao">
-                                        <span className="social-txt kakao-txt">카카오 계정으로 신규 가입</span>
+                                        <span className="social-txt kakao-txt"><RiKakaoTalkFill className="icons kakao-icon" size="24"/> 카카오 계정으로 신규 가입</span>
                                     </a>
                                 </div>
                                 <div className="width-1">
                                     <a href="#" className="btn-social btn-facebook">
-                                        <span className="social-txt facebook-txt">페이스북 계정으로 신규 가입</span>
+                                        <span className="social-txt facebook-txt"><RiFacebookFill className="icons facebook-icon" size="24"/> 페이스북 계정으로 신규 가입</span>
                                     </a>
                                 </div>
                             </div>

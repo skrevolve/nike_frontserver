@@ -1,3 +1,6 @@
+# 공지
+font페이지는 그냥 localhost로 돌리세요
+
 # 업무규칙
 - git checkout master (master 브런치로 이동한다)
 - git pull origin master
@@ -28,7 +31,7 @@ master push를 하는순간 github action이 작동됩니다.
 http://skrevolve.org:8080/test-docker
 
 # FRONT SERVER (nginx ::3000)
-http://skrevolve.org
+http:localhost:3000
 
 # DB (mariadb ::3306)
 Database : nike_db
