@@ -1,7 +1,7 @@
 import React from "react";
 import "../css/default.css";
 import "../css/SidebarCustomer.css";
-import { Link } from "react-router-dom";
+import {Link, Routes, Route} from "react-router-dom";
 
 export default function SidebarCustomer() {
   return (

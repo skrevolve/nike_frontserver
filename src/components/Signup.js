@@ -1,6 +1,7 @@
 import React from "react";
 import "../css/default.css";
 import "../css/Signup.css";
+import {Link} from "react-router-dom"
 import { RiKakaoTalkFill } from 'react-icons/ri';
 import { RiFacebookFill } from 'react-icons/ri';
 
