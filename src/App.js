@@ -2,7 +2,7 @@ import React from "react";
 // import React, { Component } from 'react'
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
-import Nrpage from "./pages/NrPage";
+import NrPage from "./pages/NrPage";
 import Login from "./components/Login";
 import Signup from "./components/Signup";
 import Customer from "./pages/Customer";
@@ -16,7 +16,7 @@ function App() {
         <Route path="/Login" element={<Login />} />
         <Route path="/Signup" element={<Signup />} />
         <Route path="/Customer" element={<Customer />} />
-        <Route path="/Nrpage" element={<Nrpage />} />
+        <Route path="/NrPage" element={<NrPage />} />
       </Routes>
     </div>
   );
