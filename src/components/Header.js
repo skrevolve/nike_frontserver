@@ -69,7 +69,7 @@ class Header extends Component {
           <div className="desk-user">
             <ul>
               <li>
-                <Link to="/Notice" className="menu-item-link">
+                <Link to="/Customer" className="menu-item-link">
                   고객센터
                 </Link>
               </li>

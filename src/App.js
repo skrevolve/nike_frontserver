@@ -5,7 +5,7 @@ import "./App.css";
 import Nrpage from "./pages/NrPage";
 import Login from "./components/Login";
 import Signup from "./components/Signup";
-import Notice from "./components/Notice";
+import Customer from "./pages/Customer";
 import Main from "./pages/Main";
 
 function App() {
@@ -15,7 +15,7 @@ function App() {
         <Route path="/" element={<Main />} />
         <Route path="/Login" element={<Login />} />
         <Route path="/Signup" element={<Signup />} />
-        <Route path="/Notice" element={<Notice />} />
+        <Route path="/Customer" element={<Customer />} />
         <Route path="/Nrpage" element={<Nrpage />} />
       </Routes>
     </div>
