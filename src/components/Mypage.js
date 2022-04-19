@@ -1,8 +1,6 @@
 import React from "react";
 import "../css/default.css";
 import "../css/Mypage.css";
-import { RiKakaoTalkFill } from 'react-icons/ri';
-import { RiFacebookFill } from 'react-icons/ri';
 
 export default function Mypage() {
 return (
@@ -20,31 +18,31 @@ return (
                                 <div className="form-row">
                                     <p className="name-txt">아이디</p>
                                     <div className="text-field">
-                                        <input type="email" disabled className="disabled"></input>
+                                        <input type="email" disabled className="disabled" />
                                     </div>
                                 </div>
                                 <div className="form-row">
                                     <p className="name-txt">비밀번호</p>
                                     <div className="text-field">
-                                        <input type="password"></input>
+                                        <input type="password" />
                                     </div>
                                 </div>
                                 <div className="form-row">
                                     <p className="name-txt">비밀번호 확인</p>
                                     <div className="text-field">
-                                        <input type="password"></input>
+                                        <input type="password" />
                                     </div>
                                 </div>
                                 <div className="form-row">
                                     <p className="name-txt">이름</p>
                                     <div className="text-field">
-                                        <input type="text" disabled className="disabled"></input>
+                                        <input type="text" disabled className="disabled" />
                                     </div>
                                 </div>
                                 <div className="form-row">
                                     <p className="name-txt">핸드폰 번호</p>
                                     <div className="text-field">
-                                        <input type="number"></input>
+                                        <input type="number" />
                                     </div>
                                 </div>
                             </form>
