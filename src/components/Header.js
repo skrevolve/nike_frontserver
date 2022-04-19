@@ -84,6 +84,11 @@ class Header extends Component {
                 </a>
                 <Login open={this.state.login} close={this.closeLogin} />
               </li>
+              <li>
+                <Link to="/Mypage" className="menu-item-link">
+                  마이페이지
+                </Link>
+              </li>
             </ul>
           </div>
           {/* // desk-user */}

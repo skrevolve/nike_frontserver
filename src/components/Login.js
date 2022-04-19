@@ -3,6 +3,9 @@ import React, { Component } from 'react'
 import '../css/default.css';
 import '../css/Login.css';
 import { Link } from 'react-router-dom';
+import { RiKakaoTalkFill } from 'react-icons/ri';
+import { RiFacebookFill } from 'react-icons/ri';
+import logo from "../images/logo1.png";
 
 
 
@@ -17,7 +20,8 @@ class Login extends Component {
                     <div className='login'>
                         <div onClick={close}> {/* 배경을 눌러도 창 꺼짐 */}
                             <div className='login_form'>
-                                <button type="button" onClick={close} className='btn_close'>X</button>
+                                <img src={logo} alt="logo" className="top-logo" />
+                                <button type="button" onClick={close} className='btn_close'>&#215;</button>
                                 <div className='login_contents' onClick={open}>
                                     <h2>나이키 로그인</h2>
                                     <form action="" name="login" method=''>
@@ -44,7 +48,13 @@ class Login extends Component {
 
                                         <div className='social_containner'>
                                             <div className='btn_kakao buttons'>
-                                                <button type='button'>카카오계정 로그인</button>
+                                                <button type='button'><RiKakaoTalkFill className="icons kakao-icon" size="24"/> <span>카카오계정 로그인</span> </button>
+                                            </div>
+                                        </div>
+
+                                        <div className='social_containner'>
+                                            <div className='btn_facebook buttons'>
+                                                <button type='button'><RiFacebookFill className="icons facebook-icon" size="24"/> <span>페이스북으로 로그인</span> </button>
                                             </div>
                                         </div>
                                     </form>

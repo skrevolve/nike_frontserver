@@ -12,7 +12,7 @@ function Modal(props) {
                 <div className='modal'>
                     <div className='modal_content'>
                         <h3>콘텐츠산업진흥법에 의한 표시</h3>
-                        <button type="button" onClick={close} className='btn_close'>X</button>
+                        <button type="button" onClick={close} className='btn_close'>&#215;</button>
                         <div className='content_text'>
                             <p>콘텐츠의 명칭 : 상품정보 및 이벤트 정보등</p>
                             <p>콘텐츠의 제작 연월일 : 2018년 02월 3일(또는, 콘텐츠가 업그레이드된 경우 그 갱신일)</p>
