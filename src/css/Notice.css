@@ -1,50 +1,67 @@
-.noticeWrap {width: 100%;}
-.noticeCon {width: 800px; margin: 0 auto; height: 960px;  padding: 45px 50px 50px; border:1px solid #ccc;}
-#search {height: 40px; padding: 0 80px 0 30px; border: 1px solid #ddd; border-radius: 30px; }
-.title {font-size: 24px; padding:50px 0 20px; border-bottom: 1px solid #000; text-align: left;}
-#notice_board {width: 100%; margin-top: 20px; }
-#notice_board th, #notice_board td{border: 1px solid #ccc; padding: 10px;}
-button[type="button"] {border: none;  padding: 10px; margin: 0 5px; border-radius: 10px; cursor: pointer;}
 .noticeWrap {
-    width: 100%;
+  width: 100%;
 }
-
 .noticeCon {
-    width: 800px;
-    margin: 0 auto;
-    height: 960px;
-    padding: 45px 50px 50px;
-    border: 1px solid #ccc;
+  width: 800px;
+  margin: 40px auto;
+  height: 960px;
+  padding: 45px 50px 50px;
+  border: 1px solid #ccc;
 }
-
-#search {
-    height: 40px;
-    padding: 0 80px 0 30px;
-    border: 1px solid #ddd;
-    border-radius: 30px;
+.srch_wrap {
+  position: relative;
+  display: inline-block;
 }
-
-.title {
-    font-size: 24px;
-    padding: 50px 0 20px;
-    border-bottom: 1px solid #000;
-    text-align: left;
+.srch_wrap #srch {
+  width: 300px;
+  height: 40px;
+  padding-left: 40px;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 30px;
 }
-
+.srch_wrap #btn_srch {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.title_wrap {
+  position: relative;
+  padding: 50px 0 20px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #000;
+}
+.title_wrap .title {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: left;
+}
+.title_wrap .btn_create {
+  display: flex;
+  position: absolute;
+  bottom: 10px;
+  right: -10px;
+  align-items: center;
+}
 #notice_board {
-    width: 100%;
-    margin-top: 20px;
+  width: 100%;
+  margin-top: 20px;
+  text-align: left;
 }
-
-#notice_board th, #notice_board td {
-    border: 1px solid #ccc;
-    padding: 10px;
+#notice_board thead th {
+  padding: 20px 0;
+  font-size: 20px;
+  font-weight: bold;
 }
-
+#notice_board tbody td {
+  padding: 30px 0;
+  border-bottom: 1px solid #ccc;
+  cursor: pointer;
+}
 button[type="button"] {
-    border: none;
-    padding: 10px;
-    margin: 0 5px;
-    border-radius: 10px;
-    cursor: pointer;
+  border: none;
+  padding: 10px;
+  margin: 0 5px;
+  border-radius: 10px;
+  cursor: pointer;
 }
