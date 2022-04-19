@@ -35,7 +35,7 @@ class Login extends Component {
                                                 <input type="checkbox" name="check" id="check" />
                                                 <label htmlFor="check"><span>로그인유지하기</span></label>
                                             </span>
-                                            <span className='login_find'><Link to="">아이디/비밀번호 찾기</Link></span>
+                                            {/* <span className='login_find'><Link to="">아이디/비밀번호 찾기</Link></span> */}
                                         </div>
 
                                         <div className='btn_login buttons'>
@@ -45,20 +45,6 @@ class Login extends Component {
                                         <div className='social_containner'>
                                             <div className='btn_kakao buttons'>
                                                 <button type='button'>카카오계정 로그인</button>
-                                            </div>
-                                            <div className='btn_facebook buttons'>
-                                                <button type='button'>페이스북으로 로그인</button>
-                                            </div>
-                                        </div>
-
-                                        <div>
-                                            <div className='join_text'>
-                                                <span>회원이 아니신가요?</span>
-                                                <span><Link to="/Signup">회원가입</Link></span>
-                                            </div>
-
-                                            <div className='noMemberOrder'>
-                                                <span><Link to="">비회원 주문 조회</Link></span>
                                             </div>
                                         </div>
                                     </form>
