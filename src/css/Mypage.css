@@ -1,0 +1,176 @@
+.Mypage-wrap {
+    margin-top: 70px;
+}
+
+.Mypage-wrap .width-wrap {
+    max-width: 420px;
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    padding: 0 20px 32px;
+    box-sizing: border-box;
+}
+
+.Mypage-wrap .width-wrap .header-area {
+    margin-bottom: 30px;
+    text-align: center;
+    letter-spacing: -1px;
+}
+
+.Mypage-wrap .width-wrap .header-area .s-title-top {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    border-bottom: 1px solid rgb(185, 181, 181);
+}
+
+.Mypage-wrap .width-wrap .header-area .s-title {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: left;
+    font-size: 24px;
+    color: #111;
+    font-weight: 700;
+}
+
+.Mypage-wrap .width-wrap .body-area .form-top {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+.Mypage-wrap .width-wrap .body-area .form-top .name-txt {
+    text-align: left;
+    font-size: 11px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.Mypage-wrap .width-wrap .body-area .form-top .text-field {
+    width: 100%;
+    display: inline-block;
+    position: relative;
+}
+
+.Mypage-wrap .width-wrap .body-area .form-top .text-field label {
+    position: absolute;
+    top: 13px;
+    left: 13px;
+    font-size: 13.5px;
+    color: #999;
+    cursor: inherit;
+}
+
+.Mypage-wrap .width-wrap .body-area .form-top .form-row + .form-row {
+    margin-top: 15px;
+}
+
+.Mypage-wrap .width-wrap .body-area .form-top .form-row + .form-row {
+    margin-top: 15px;
+}
+
+.Mypage-wrap .width-wrap .body-area .form-top .form-row .text-field input {
+    width: 100%;
+    height: 40px;
+    border: 1px solid #e5e5e5;
+    padding: 9px 12px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.Mypage-wrap .width-wrap .body-area .form-top .form-row .text-field .disabled {
+    background-color: #eee;
+}
+
+b {
+    font-weight: bold;
+    
+}
+
+b {
+    font-weight: bold;
+
+}
+
+.Mypage-wrap .width-wrap .body-area .form-top .form-row .regi-terms .agree .agree-check {
+    padding-top: 7px;
+    font-size: 13px;
+    line-height: 1;
+    text-align: left;
+}
+
+.Mypage-wrap .width-wrap .body-area .form-top .form-row .regi-terms .agree .agree-check label {
+    display: flex;
+    align-items: center;
+}
+
+.Mypage-wrap .width-wrap .body-area .form-bottom {
+    margin-top: 35px !important;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+.Mypage-wrap .width-wrap .body-area .form-bottom .agree-info-txt {
+    padding-top: 7px;
+    font-size: 11px;
+    line-height: 1.5;
+    font-weight: 700;
+    width: 100%;
+    text-align: left;
+}
+
+.Mypage-wrap .width-wrap .body-area .form-bottom .agree-info-txt.center {
+    padding: 20px 0;
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.Mypage-wrap .width-wrap .body-area .form-btn {
+    margin-top: 35px;
+    margin-bottom: 15px;
+}
+
+.Mypage-wrap .width-wrap .body-area .form-btn .Mypage-btn {
+    height: 48px;
+    font-size: 15px;
+    padding: 12px 50px;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    background-color: #000;
+    border: none;
+    cursor: pointer;
+}
+
+.Mypage-wrap .width-wrap .body-area .form-btn .Mypage-btn:hover {
+    background-color: #333;
+}
+
+
+.Mypage-wrap .width-wrap .body-area .form-btn.out {
+    margin-top: 0;
+}
+
+.Mypage-wrap .width-wrap .body-area .form-btn.out .out-btn {
+    height: 48px;
+    font-size: 15px;
+    padding: 12px 50px;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    background-color: rgb(167, 164, 164);
+    border: none;
+    cursor: pointer;
+}
+
+.Mypage-wrap .width-wrap .body-area .form-btn.out .out-btn:hover {
+    background-color: rgb(173, 173, 173);
+}
