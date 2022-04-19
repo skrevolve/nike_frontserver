@@ -8,6 +8,7 @@ import Signup from "./components/Signup";
 import Notice from "./components/Notice";
 import Mypage from "./components/Mypage";
 import Customer from "./pages/Customer";
+import OfflineInfo from "./components/OfflineInfo";
 import Main from "./pages/Main";
 
 function App() {
@@ -17,7 +18,9 @@ function App() {
         <Route path="/" element={<Main />} />
         <Route path="/Login" element={<Login />} />
         <Route path="/Signup" element={<Signup />} />
+        <Route path="/Customer" element={<Customer />} />
         <Route path="/Notice" element={<Notice />} />
+        <Route path="/OfflineInfo" element={<OfflineInfo />} />
         <Route path="/Mypage" element={<Mypage />} />
         <Route path="/Customer" element={<Customer />} />
         <Route path="/NrPage" element={<NrPage />} />
