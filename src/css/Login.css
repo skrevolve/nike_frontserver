@@ -2,7 +2,6 @@
 .login_form .buttons button {
     width: 100%;
     height: 50px;
-    padding: 13px 30px;
     border: none;
     font-size: 14px;
 }
@@ -22,9 +21,19 @@
     width: 480px;
     height: 620px;
     position: relative;
-    padding: 20px;
+    padding: 30px !important;
     margin: 50px auto;
     background: #fff;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.top-logo {
+    position: absolute;
+    top: 60px;
+    left: 51%;
+    transform: translate(-50%);
+    width: 74px;
 }
 
 .login_contents h2 {
@@ -37,7 +46,7 @@
     position: absolute;
     top: 20px;
     right: 25px;
-    font-size: 20px;
+    font-size: 34px;
     background: none;
 }
 
@@ -97,7 +106,6 @@
 .login_form .buttons button {
     width: 100%;
     height: 50px;
-    padding: 13px 30px;
     border: none;
     font-size: 14px;
 }
@@ -139,8 +147,8 @@
 }
 
 .login_input > input {
-    width: 445px;
-    height: 40px;
+    width: 394px;
+    height: 25px;
     padding: 9px 12px;
     border: 1px solid #e5e5e5;
     color: #999;
@@ -166,8 +174,14 @@
 .btn_login button {
     background: #000;
     color: #fff;
-    margin: 20px 0;
+    margin-top: 25px !important;
+    margin: 15px 0;
     cursor: pointer;
+}
+
+button span {
+    position: relative;
+    left: -10px;
 }
 
 .btn_kakao {
@@ -176,6 +190,10 @@
 
 .btn_kakao button {
     background: #feec34;
+    margin: 0 !important;
+    margin-bottom: 5px !important;
+    padding-top: 2px !important;
+    border-radius: 0 !important;
 }
 
 .btn_facebook {
@@ -185,6 +203,19 @@
 .btn_facebook button {
     background: #21538a;
     color: #fff;
+    margin: 0 !important;
+    padding-top: 2px !important;
+    border-radius: 0 !important;
+}
+
+.icons {
+    position: relative;
+    top: 5px;
+    left: -112px;
+}
+
+.icons.kakao-icon {
+    left: -117px;
 }
 
 .join_text, .noMemberOrder {
