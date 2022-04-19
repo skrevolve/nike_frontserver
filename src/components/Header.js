@@ -23,11 +23,9 @@ class Header extends Component {
       $(".gnb > ul > li").mouseenter(function () {
         $(this).find(".sub_menu_wrap").css("display", "flex");
       });
-
       $(".gnb > ul > li").mouseleave(function () {
         $(this).find(".sub_menu_wrap").css("display", "none");
       });
-
       $(".gnb > ul > li").click(function () {
         $(this).find(".sub_menu_wrap").css("display", "none");
       });
