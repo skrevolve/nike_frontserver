@@ -1,6 +1,7 @@
 import React from "react";
 import "../css/default.css";
 import "../css/SidebarCustomer.css";
+import { Link } from "react-router-dom";
 
 export default function SidebarCustomer() {
   return (
@@ -10,10 +11,14 @@ export default function SidebarCustomer() {
         <div className="side_sub">
           <ul>
             <li>
-              <a href="">공지사항</a>
+              <Link to="/Notice">
+                공지사항
+              </Link>
             </li>
-            <li>
-              <a href="">매장안내</a>
+            <li>           
+              <Link to="/OfflineInfo">
+                매장안내
+              </Link>
             </li>
           </ul>
         </div>
