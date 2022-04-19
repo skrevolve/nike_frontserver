@@ -10,6 +10,7 @@
     padding: 45px 50px 50px;
     position: relative;
     border: 1px solid #ccc;
+    margin: 40px auto;
 }
 
 .offlineInfo .title {

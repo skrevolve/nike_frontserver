@@ -179,7 +179,7 @@
     cursor: pointer;
 }
 
-button span {
+.social_containner button span {
     position: relative;
     left: -10px;
 }
