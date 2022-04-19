@@ -1,12 +1,12 @@
 import React from "react";
 import SidebarCustomer from "../components/SidebarCustomer";
-import Notice from "../components/Notice";
+import CustomerLink from "../pages/CustomerLink";
 
 function Customer() {
   return (
     <>
       <SidebarCustomer />
-      <Notice />
+      <CustomerLink/>
     </>
   );
 }

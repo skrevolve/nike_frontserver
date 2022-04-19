@@ -1,0 +1,8 @@
+.offlineInfo_wrap {width: 100%; font-size: 14px;}
+.offlineInfo {width: 800px; height: 960px; text-align: left; padding: 45px 50px 50px; position: relative; border: 1px solid #ccc;}
+.offlineInfo .title { padding: 50px 0 20px; margin-bottom: 30px; border-bottom: 1px solid #000; font-size: 30px; font-weight: bold;}
+.offlineInfo [type="button"] {border: 1px solid #000; border-radius: 4px;}
+.offlineInfo .title {margin-bottom: 50px; padding: 0 130px 20px 0; font-weight: 600; line-height: 28px; border-bottom: 1px solid #000;}
+.offlineInfo .btn_offline {position: absolute; top: 45px; right:45px; font-size: 12px;}
+#offlineBoard tbody td {width: 800px; border-bottom: 1px solid #ddd;  padding: 15px 0; color: #545353;}
+
