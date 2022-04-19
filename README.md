@@ -38,13 +38,7 @@ master push를 하는순간 github action이 작동됩니다.
 http://skrevolve.org:8080/test-docker
 
 # FRONT SERVER (nginx ::3000)
-
-<<<<<<< HEAD
-http://skrevolve.org
-=======
 http:localhost:3000
-
-> > > > > > > 2e82f917d54cef61bd3c116443536929b322f5c4
 
 # DB (mariadb ::3306)
 
