@@ -6,7 +6,7 @@ import NrPage from "./pages/NrPage";
 import Login from "./components/Login";
 import Signup from "./components/Signup";
 import Notice from "./components/Notice";
-import Mypage from "./components/Mypage";
+import MyPage from "./components/Mypage";
 import OfflineInfo from "./components/OfflineInfo";
 import Main from "./pages/Main";
 
@@ -18,7 +18,7 @@ function App() {
         <Route path="/" element={<Main />} />
         <Route path="/Login" element={<Login />} />
         <Route path="/Signup" element={<Signup />} />
-        <Route path="/Mypage" element={<Mypage />} />
+        <Route path="/MyPage" element={<MyPage />} />
         <Route path="/NrPage" element={<NrPage />} />
         <Route path="/Notice" element={<Notice />} />
         <Route path="/OfflineInfo" element={<OfflineInfo />} />

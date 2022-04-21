@@ -2,7 +2,7 @@ import React from "react";
 import Sidebar from "../components/Sidebar";
 import Product from "../components/Product";
 
-function Nrpage() {
+function NrPage() {
     return (
         <>
             <Sidebar/>
@@ -11,4 +11,4 @@ function Nrpage() {
     );
 }
 
-export default Nrpage;
+export default NrPage;

@@ -223,7 +223,6 @@ button {
 .menu_opt {
   display: flex;
   position: relative;
-  display: flex;
   height: 60px;
   padding: 0 40px;
   box-sizing: border-box;

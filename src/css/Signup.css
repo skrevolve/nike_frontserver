@@ -88,7 +88,7 @@
     color: #111;
     width: 100%;
     padding-top: 2px;
-    padding-left: 0px;
+    padding-left: 0;
     font-size: 14px;
     text-align: center;
     display: inline-block;
@@ -205,14 +205,9 @@
     border: 1px solid #d1d1d1;
     text-align: left;
 }
-b {
-    font-weight: bold;
-    
-}
 
 b {
     font-weight: bold;
-
 }
 
 .Signup-wrap .width-wrap .body-area .form-top .form-row .regi-terms .agree .agree-check {
@@ -228,11 +223,10 @@ b {
 }
 
 .Signup-wrap .width-wrap .body-area .form-bottom {
-    margin-top: 35px !important;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    margin: 0;
+    margin: 15px 0 0 0;
     padding: 0;
 }
 

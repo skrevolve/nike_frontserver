@@ -2,10 +2,10 @@ import React from "react";
 import "../css/default.css";
 import "../css/Mypage.css";
 
-export default function Mypage() {
+export default function MyPage() {
 return (
     <>
-        <div className="Mypage-wrap">
+        <div className="MyPage-wrap">
             <div className="width-wrap">
                 <div className="header-area">
                     <h1 className="s-title-top">MY PAGE</h1>
@@ -48,7 +48,7 @@ return (
                             </form>
                         </div>
                         <div className="form-btn">
-                            <button className="Mypage-btn">
+                            <button className="MyPage-btn">
                                 수정하기
                             </button>
                         </div>

@@ -174,8 +174,7 @@
 .btn_login button {
     background: #000;
     color: #fff;
-    margin-top: 25px !important;
-    margin: 15px 0;
+    margin: 25px 0 15px 0;
     cursor: pointer;
 }
 

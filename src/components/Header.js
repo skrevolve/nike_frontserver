@@ -85,7 +85,7 @@ class Header extends Component {
                 <Login open={this.state.login} close={this.closeLogin} />
               </li>
               <li>
-                <Link to="/Mypage" className="menu-item-link">
+                <Link to="/MyPage" className="menu-item-link">
                   마이페이지
                 </Link>
               </li>
